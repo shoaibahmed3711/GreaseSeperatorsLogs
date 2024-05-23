@@ -121,7 +121,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/SubscriptionForm",
-    element: <SubscriptionForm />,
+    element:<><Header /><SubscriptionForm /></> ,
   },
   {
     path: "/Chat",

@@ -4,18 +4,18 @@ import { Bar, Doughnut, Line, Pie } from "react-chartjs-2";
 
 const Analytics = () => {
   const monthlyData = {
-    Jan: { exchange: 5000, cost: 2000 },
-    Feb: { exchange: 5500, cost: 2100 },
-    Mar: { exchange: 6000, cost: 2200 },
-    Apr: { exchange: 6500, cost: 2300 },
-    May: { exchange: 7000, cost: 2400 },
-    June: { exchange: 7500, cost: 2500 },
-    July: { exchange: 8000, cost: 2600 },
-    Aug: { exchange: 8500, cost: 2700 },
-    Sep: { exchange: 9000, cost: 2800 },
-    Oct: { exchange: 9500, cost: 2900 },
-    Nov: { exchange: 10000, cost: 3000 },
-    Dec: { exchange: 10500, cost: 3100 },
+    Jan: { exchange:0, cost: 0 },
+    Feb: { exchange:0, cost: 0 },
+    Mar: { exchange:0, cost: 0 },
+    Apr: { exchange:0, cost: 0 },
+    May: { exchange:0, cost: 0 },
+    June: { exchange:0, cost: 0 },
+    July: { exchange:0, cost: 0 },
+    Aug: { exchange:0, cost: 0 },
+    Sep: { exchange:0, cost: 0 },
+    Oct: { exchange:0, cost: 0 },
+    Nov: { exchange: 0, cost: 0 },
+    Dec: { exchange: 0, cost: 0 },
   };
 
   const labels = Object.keys(monthlyData);
@@ -61,9 +61,9 @@ const Analytics = () => {
     },
   };
   
-  const pendingPercentage = 50;
-  const completePercentage = 30;
-  const canceledPercentage = 20;
+  const pendingPercentage = 1;
+  const completePercentage = 1;
+  const canceledPercentage = 1;
   
   const DoughnutData = {
     labels: ["Pending", "Complete", "Canceled"],
@@ -131,8 +131,8 @@ const Analytics = () => {
                   <p className='twxt-[1vw]'>Orders</p>
                 </div>
               </div>
-              <div className='text-[2.4vw] my-[2vw]'>$5000.00</div>
-              <div className='text-[1.4vw] my-[2vw]'>+1.3k $ This week</div>
+              <div className='text-[2.4vw] my-[2vw]'>$0.0</div>
+              <div className='text-[1.4vw] my-[2vw]'>0 $ This week</div>
               </div>
             <div className="bg-white shadow-lg h-[17vw] w-[25vw] p-[1vw] rounded-[1vw]">
             <div className='flex flex-row items-center gap-[1vw]'>
@@ -142,8 +142,8 @@ const Analytics = () => {
                   <p className='twxt-[1vw]'>Avg time 4pm</p>
                 </div>
               </div>
-              <div className='text-[2.4vw] my-[2vw]'>12,322</div>
-              <div className='text-[1.4vw] my-[2vw]'>+1.1k $ This week</div>
+              <div className='text-[2.4vw] my-[2vw]'>0</div>
+              <div className='text-[1.4vw] my-[2vw]'>0 $ This week</div>
             </div>
             <div className="bg-white shadow-lg h-[17vw] w-[25vw] p-[1vw] rounded-[1vw]">
             <div className='flex flex-row items-center gap-[1vw]'>
@@ -153,8 +153,8 @@ const Analytics = () => {
                   <p className='twxt-[1vw]'>2 Disputed</p>
                 </div>
               </div>
-              <div className='text-[2.4vw] my-[2vw]'>963</div>
-              <div className='text-[1.4vw] my-[2vw]'>-333</div>
+              <div className='text-[2.4vw] my-[2vw]'>0</div>
+              <div className='text-[1.4vw] my-[2vw]'>0</div>
             </div>
           </div>
           <div className=" h-[23vw] w-[82vw] flex flex-row justify-between items-center">

@@ -47,7 +47,7 @@ const Dashboard = () => {
             >
               <img
                 className="w-[1.6vw]"
-                src="public/Dashboard/analytics.png"
+                src="/Dashboard/analytics.png"
                 alt=""
               />
               <h1>Analytics</h1>
@@ -63,7 +63,7 @@ const Dashboard = () => {
             >
               <img
                 className="w-[1.6vw]"
-                src="public/Dashboard/report.png"
+                src="/Dashboard/report.png"
                 alt=""
               />
               <h1>Reports</h1>
@@ -80,7 +80,7 @@ const Dashboard = () => {
             >
               <img
                 className="w-[1.6vw]"
-                src="public/Dashboard/integration.png"
+                src="/Dashboard/messages.png"
                 alt=""
               />
               <h1>Messages</h1>
@@ -96,7 +96,7 @@ const Dashboard = () => {
             >
               <img
                 className="w-[1.6vw]"
-                src="public/Dashboard/repo.png"
+                src="/Dashboard/repo.png"
                 alt=""
               />
               <h1>Repositary</h1>
@@ -112,7 +112,7 @@ const Dashboard = () => {
             >
               <img
                 className="w-[1.6vw]"
-                src="public/Dashboard/logs.png"
+                src="/Dashboard/logs.png"
                 alt=""
               />
               <h1>Logs</h1>
@@ -125,7 +125,7 @@ const Dashboard = () => {
         <div className="container h-[4vw] border-[#d5d5d5] border-b-[0.2vw] bg-white flex flex-row justify-between py-[0.5vw] px-[1vw]">
           <div className="flex flex-row justify-center items-center gap-[1vw]">
             <img
-              src="public/Home/profile.png"
+              src="/Home/profile.png"
               className="w-[3vw] rounded-[0.2vw]"
               alt="icon"
             />

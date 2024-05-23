@@ -26,7 +26,7 @@ const Help = () => {
         <p className="text-[12px]">
           Discover grease separator basics for German restaurant owners: function, importance, and management responsibilities.
         </p>
-        <Link to='/Chat'>Apply</Link>
+       
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
         <img src="public/Help/2.png" className="w-[50px] shadow-lg" alt="" />
@@ -105,6 +105,10 @@ const Help = () => {
         </p>
       </div>
       </div>
+      <button className="bg-[#444444] mx-[10px]  w-[110px] rounded-[3px] text-white h-[30px]">
+
+      <Link to='/Chat' className="text-[14px]">Send Message</Link>
+      </button>
     </div>
     
   </div>

@@ -19,12 +19,12 @@ const ChatBox = ({
 }) => {
     return (
         <div
-            className={`chat-area h-full w-full flex bg flex-col p-4 rounded-lg ${
-                darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100'
+            className={`chat-area h-full w-full flex  flex-col  rounded-lg ${
+                darkMode ? 'bg-gray-800 text-black' : 'bg-[#ececec]'
             }`}
         >
             {/* User profile at the top */}
-            <div className="user-profile flex items-center mb-4">
+            <div className="user-profile flex bg-[#444444] rounded-t-lg p-[20px] h-[70px] items-center mb-4">
                 <img
                     src={chat.userImageURL}
                     alt={chat.userName}
@@ -34,7 +34,7 @@ const ChatBox = ({
             </div>
 
             {/* Chat messages in the middle */}
-            <div className="chat-messages flex-grow overflow-y-auto h-56 p-4 mb-4">
+            <div className="chat-messages flex-grow overflow-y-auto h-56  mb-4">
                 {chat.messages.map((msg, index) => (
                     <div key={index} className="message my-2 flex items-center">
                         <div
@@ -72,7 +72,7 @@ const ChatBox = ({
             </div>
 
             {/* Input area at the bottom */}
-            <div className="input-area flex space-x-2 items-center">
+            <div className="input-area flex space-x-2 px-[20px] items-center">
                 {/* File upload input */}
                 <div className="file-upload">
                     <input
@@ -85,7 +85,7 @@ const ChatBox = ({
                         htmlFor="file-upload"
                         className="upload-label text-black px-4 py-2 rounded-lg cursor-pointer"
                     >
-                        <img src="public/SVG/upload.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
+                        <img src="/Messages/upload.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
                     </label>
                 </div>
 
@@ -94,7 +94,7 @@ const ChatBox = ({
                     className="emoji-picker-button text-black px-4 py-2 rounded-lg cursor-pointer"
                     onClick={toggleEmojiPicker}
                 >
-                    <img src="public/SVG/Emoji.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
+                    <img src="/Messages/emoji.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
                 </button>
 
                 {/* Emoji picker */}
@@ -138,7 +138,7 @@ const ChatBox = ({
                 {/* Send button */}
                 <button
                     onClick={handleSendMessage}>
-                   <img src="public/SVG/send.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
+                   <img src="/Messages/send.png" className='w-[3vw]  rounded-full p-1' alt="" />
                 </button>
             </div>
         </div>
@@ -286,11 +286,6 @@ const ChatSystem = ({ userName, userImageURL }) => {
         alert('Pin chat feature coming soon!');
     };
 
-    // Function to archive a chat
-    const handleArchiveChat = (chatIndex) => {
-        // Implement your archive chat logic here
-        alert('Archive chat feature coming soon!');
-    };
 
     // Filter chats based on search query
     const filteredChats = chats.filter((chat) =>
@@ -300,10 +295,10 @@ const ChatSystem = ({ userName, userImageURL }) => {
     return (
         <div
             className={`chat-system absolute flex flex-row right-[1.4vw] top-[13vh] ${
-                darkMode ? 'bg-gray-900' : 'bg-slate-100'
+                darkMode ? 'bg-gray-900' : 'bg-[#ececec]'
             } h-[85vh] w-[82vw] rounded-[0.7vw]`}
         >
-            {/* Left sidebar with chat selection */}
+            
             <div
                 className={`left-sidebar w-[40vw] ${
                     darkMode ? 'bg-gray-800' : 'bg-white'
@@ -317,7 +312,7 @@ const ChatSystem = ({ userName, userImageURL }) => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className={`search-bar flex-grow px-3 py-2  border ${
-                        darkMode ? 'bg-gray-600' : 'border-gray-100'
+                        darkMode ? 'bg-gray-600' : ''
                     } rounded-lg`}
                     placeholder="Search chats..."
                     />
@@ -325,18 +320,18 @@ const ChatSystem = ({ userName, userImageURL }) => {
                 {/* Button to create a new chat */}
                 <button
                     onClick={handleNewChat}
-                    className={`new-chat-btn   font-roboto text-2xl mx-1 text-center w-[3vw] hover:bg-gray-300 p-1
+                    className={`new-chat-btn font-roboto text-2xl mx-1 text-center w-[3vw] hover:bg-gray-300 p-1
                          text-gray-100 rounded-full`}
                     >
-                   <img src="public/SVG/add.png"  alt="" />
+                    <img src="/Report/add.png"  alt="" />
                 </button>
 
                 {/* Toggle dark mode */}
                 <button
                     onClick={handleDarkModeToggle}
-                    className="dark-mode-toggle w-[3vw] font-roboto text-2xl  items-center   hover:bg-gray-300 rounded-full"
+                    className="dark-mode-toggle w-[3vw] font-roboto text-2xl  items-center  rounded-full"
                     >
-                    <img src="public/SVG/Dark.png"  alt="" />
+                   <img src="/Messages/theme.png"  alt="" />
                 </button>
 
                     </div>
@@ -344,8 +339,8 @@ const ChatSystem = ({ userName, userImageURL }) => {
                 {filteredChats.map((chat, index) => (
                     <div
                         key={index}
-                        className={`chat-item p-2 my-2 rounded-lg ${
-                            darkMode ? 'bg-gray-700' : 'bg-gray-300 hover:bg-gray-400'
+                        className={`chat-item h-[60px] p-2 my-2 rounded-lg ${
+                            darkMode ? 'bg-gray-700' : 'bg-[#444444] hover:[#ececec]'
                         } hover:bg-gray-400 flex justify-between`}
                         onClick={() => setSelectedChatIndex(index)}
                     >
@@ -365,21 +360,15 @@ const ChatSystem = ({ userName, userImageURL }) => {
                                 className="pin-chat-button"
                                 onClick={() => handlePinChat(index)}
                             >
-                                <img src="public/SVG/pin.png" className='w-[3vw] hover:bg-yellow-600 rounded-full p-1' alt="" />
+                                <img src="/Messages/pin.png" className='w-[3vw] rounded-full p-1' alt="" />
                             </button>
-                            {/* Archive chat */}
-                            <button
-                                className="archive-chat-button"
-                                onClick={() => handleArchiveChat(index)}
-                            >
-                                <img src="public/SVG/archive.png" className='w-[3vw] hover:bg-yellow-600 rounded-full p-1' alt="" />
-                            </button>
+                           
                             {/* Delete chat */}
                             <button
                                 onClick={() => handleDeleteChat(index)}
                                 className="delete-chat-btn text-red-500"
                             >
-                                <img src="public/SVG/Tarsh.png" className='w-[3vw] hover:bg-red-500 rounded-full p-1' alt="" />
+                                <img src="/Messages/Trash.png" className='w-[2vw]  rounded-full p-1' alt="" />
                             </button>
                         </div>
                     </div>
@@ -388,7 +377,7 @@ const ChatSystem = ({ userName, userImageURL }) => {
 
             {/* Right: ChatBox with the selected chat */}
             <div
-                className={`right-chatbox w-[40vw] ${
+                className={`right-chatbox w-[90vw] ${
                     darkMode ? 'bg-gray-800' : 'bg-blue-100'
                 } rounded-[0.7vw] m-[1vw] p-4 overflow-y-auto`}
             >
@@ -409,13 +398,12 @@ const ChatSystem = ({ userName, userImageURL }) => {
                         handleEmojiClick={handleEmojiClick}
                     />
                 ) : (
-                    <p
-                        className={`${
-                            darkMode ? 'text-gray-900' : 'text-gray-900'
-                        }`}
-                    >
-                        Select a chat from the left pane to start chatting
-                    </p>
+                    <div className='flex flex-col items-center my-[130px] justify-center'>
+                        <img src="/Dashboard/messages.png" className='w-[150px]' alt="" />
+                        <h1>
+                            Select a chat
+                        </h1>
+                    </div>
                 )}
             </div>
         </div>

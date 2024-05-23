@@ -4,18 +4,18 @@ import { Line } from 'react-chartjs-2';
 const Report = () => {
 
  // Default number of users for each month
- const defaultUsers = 250;
- const default1Users = 270;
- const default2Users = 255;
- const default3Users = 260;
- const default4Users = 265;
- const default5Users = 270;
- const default6Users = 263;
- const default7Users = 273;
- const default8Users = 270;
- const default9Users = 276;
- const default10Users = 271;
- const default11Users = 280;
+ const defaultUsers = 0;
+ const default1Users = 0;
+ const default2Users = 0;
+ const default3Users = 0;
+ const default4Users = 0;
+ const default5Users = 0;
+ const default6Users = 0;
+ const default7Users = 0;
+ const default8Users = 0;
+ const default9Users = 0;
+ const default10Users = 0;
+ const default11Users = 0;
 
  // Data for the line chart (only user data, no labels)
  const monthlyData = {
@@ -177,10 +177,11 @@ const filteredRows = rows.filter((row) => {
 
 
   return (
-<div className='absolute top-[4vw] right-0 bg-[#ececec] p-[0.5vw] w-[84vw] overflow-y-auto'>      <div className="h-[20vw] m-[1vw] w-[82vw] flex flex-row justify-between items-center">
+<div className='absolute top-[4vw] h-[42vw] right-0 bg-[#ececec] p-[0.5vw] w-[84vw] overflow-y-auto'>      
+<div className="h-[10vw] m-[1vw] w-[82vw] flex flex-row justify-between items-center">
         <div className='flex flex-row gap-[1vw]'>
-          <div className='flex flex-col gap-[1vw]'>
-            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[20vw] rounded-[1vw]">
+          <div className='flex flex-row gap-[1vw]'>
+            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
               <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>New User</h1>
               <img src="public/Report/newuser.png" className='w-[3vw]' alt="" />
@@ -193,7 +194,7 @@ const filteredRows = rows.filter((row) => {
               </div>
             </div>
               
-            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[20vw] rounded-[1vw]">
+            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
             <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>Unique user</h1>
               <img src="public/Report/unique.png" className='w-[3vw]' alt="" />
@@ -207,8 +208,8 @@ const filteredRows = rows.filter((row) => {
               </div>
               
           </div>
-          <div className='flex flex-col gap-[1vw]'>
-            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[20vw] rounded-[1vw]">
+          <div className='flex flex-row gap-[1vw]'>
+            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
             <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>Mentioned in Tags</h1>
               <img src="public/Report/tags.png" className='w-[3vw]' alt="" />
@@ -220,8 +221,7 @@ const filteredRows = rows.filter((row) => {
                 </div>
               </div>
               </div>
-              
-            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[20vw] rounded-[1vw]">
+            <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
             <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>Website Visits</h1>
               <img src="public/Report/visits.png" className='w-[3vw]' alt="" />
@@ -236,46 +236,26 @@ const filteredRows = rows.filter((row) => {
               
           </div>
         </div>
-        <div className="bg-white shadow-lg h-[21vw] w-[40vw] rounded-[1vw]">
-          
-        </div>
+       
       </div>
-      <div className="h-[20vw] mt-[2vw] ml-[1vw] w-[82vw] flex flex-row justify-between items-center">
-        <div className="bg-white shadow-lg p-[1vw] h-[21vw] w-[41vw] rounded-[1vw]">
+      <div className="h-[20vw] mt-[2vw] ml-[1vw] w-[82vw] flex flex-row justify-between">
+        <div className="bg-white shadow-lg p-[1vw] h-[28vw] w-[41vw] rounded-[1vw]">
           <h1  className='font-bold text-[1.2vw]'>Best selling Products</h1>
+         
+         
           <div className='bg-[#ececec] w-[39vw] h-[4vw] rounded-md m-[0.2vw]  flex flex-row items-center justify-between px-[1vw]'>
             <div className='flex flex-row items-center'>
               <img src="public/Report/profile.png" className='w-[3.2vw] m-[0.3vw]' alt="" />
-                <h1 className='m-[0.3vw]'>Grease Seperator</h1>
+                <h1 className='m-[0.3vw] text-[1.4vw]'>Grease Seperator</h1>
             </div>
               <div className='flex flex-col text-center'>
-                <h1 className='font-bold text-[#454545]'>sold</h1>
-                <h1 className='font-bold'>no of unit</h1>
-              </div>
-          </div>
-          <div className='bg-[#ececec] w-[39vw] h-[4vw] rounded-md m-[0.2vw]  flex flex-row items-center justify-between px-[1vw]'>
-            <div className='flex flex-row items-center'>
-              <img src="public/Report/profile.png" className='w-[3.2vw] m-[0.3vw]' alt="" />
-                <h1 className='m-[0.3vw]'>Grease Seperator</h1>
-            </div>
-              <div className='flex flex-col text-center'>
-                <h1 className='font-bold text-[#454545]'>sold</h1>
-                <h1 className='font-bold'>no of unit</h1>
-              </div>
-          </div>
-          <div className='bg-[#ececec] w-[39vw] h-[4vw] rounded-md m-[0.2vw]  flex flex-row items-center justify-between px-[1vw]'>
-            <div className='flex flex-row items-center'>
-              <img src="public/Report/profile.png" className='w-[3.2vw] m-[0.3vw]' alt="" />
-                <h1 className='m-[0.3vw]'>Grease Seperator</h1>
-            </div>
-              <div className='flex flex-col text-center'>
-                <h1 className='font-bold text-[#454545]'>sold</h1>
-                <h1 className='font-bold'>no of unit</h1>
+                <h1 className='font-bold text-[#454545]  text-[1vw]'>sold</h1>
+                <h1 className='font-bold text-[1vw]'>no of unit</h1>
               </div>
           </div>
         </div>
         
-        <div className="bg-white shadow-lg p-[1vw] h-[21vw] w-[40vw] rounded-[1vw]">
+        <div className="bg-white shadow-lg p-[1vw] h-[28vw] w-[40vw] rounded-[1vw]">
           <h1  className='font-bold text-[1.2vw]'>Active Customer</h1>
           <div className="h-[20vw]">
         <table className="w-[36vw] overflow-y-auto">
@@ -317,7 +297,7 @@ const filteredRows = rows.filter((row) => {
       </div>
 
       {!isFormVisible && (
-        <div className="absolute bottom-0 left-[46vw]">
+        <div className="absolute bottom-0 left-[45vw]">
           <button
             className="w-[3vw] p-[0.1vw] rounded"
             onClick={() => setFormVisible(true)}

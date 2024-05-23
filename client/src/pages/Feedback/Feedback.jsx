@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Feedback = () => {
   const [inputText, setInputText] = useState("");
-  const [feedbacks, setFeedbacks] = useState([]);
-  const [ratings, setRatings] = useState([]);
+  const [feedbacks, setFeedbacks] = useState(() => {
+    const savedFeedbacks = localStorage.getItem("feedbacks");
+    return savedFeedbacks ? JSON.parse(savedFeedbacks) : [];
+  });
+  const [ratings, setRatings] = useState(() => {
+    const savedRatings = localStorage.getItem("ratings");
+    return savedRatings ? JSON.parse(savedRatings) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
+  }, [feedbacks]);
+
+  useEffect(() => {
+    localStorage.setItem("ratings", JSON.stringify(ratings));
+  }, [ratings]);
 
   const handleInputChange = (e) => {
     setInputText(e.target.value);
