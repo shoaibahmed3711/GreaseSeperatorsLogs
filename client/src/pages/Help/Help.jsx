@@ -107,7 +107,7 @@ const Help = () => {
       </div>
       <button className="bg-[#444444] mx-[10px]  w-[110px] rounded-[3px] text-white h-[30px]">
 
-      <Link to='/Chat' className="text-[14px]">Send Message</Link>
+      <Link to='/Signup' className="text-[14px]">Send Message</Link>
       </button>
     </div>
     

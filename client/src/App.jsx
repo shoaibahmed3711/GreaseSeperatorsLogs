@@ -16,7 +16,36 @@ import Feedback from './pages/Feedback/Feedback';
 import SubscriptionForm from './pages/Pricing/SubscriptionForm';
 import Chat from './pages/Help/Chat';
 import SubFormYear from './pages/Pricing/SubFormYear';
+import Signup from './pages/Help/Signup';
+import Signin from './pages/Help/Signin';
+import Index from './pages/Help/Index';
+
 const router = createBrowserRouter([
+  {
+    path: "/Signin",
+    element: (
+      <>
+        <Signin />
+
+      </>
+    ),
+  },
+  {
+    path: "/Index",
+    element: (
+      <>
+        <Header /><Index />
+      </>
+    ),
+  },
+  {
+    path: "/Signup",
+    element: (
+      <>
+        <Signup />
+      </>
+    ),
+  },
   {
     path: "/",
     element: (
