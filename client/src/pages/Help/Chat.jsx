@@ -44,9 +44,10 @@ const Chat = () => {
   };
 
   return (
-    <div className='w-[800px] bg-[#d5d5d5] my-[10px] mx-auto rounded-lg overflow-hidden shadow-lg'>
+    <div className='w-[800px] my-[10px] mx-auto rounded-lg overflow-hidden '>
       {showForm ? (
-        <form onSubmit={handleStartChat} className='px-4  py-3'>
+        <form onSubmit={handleStartChat} className=' items-center mx-auto mt-[100px] bg-[#ececec] rounded-[10px] w-[300px] px-4  py-3'>
+          <h1 className='text-[20px] my-[10px]'>Your Name</h1>
           <input
             type='text'
             value={userName}
@@ -54,17 +55,28 @@ const Chat = () => {
             className='appearance-none border rounded-[10px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2 block w-full'
             placeholder='Enter your name...'
           />
-          <input
-            type='file'
-            onChange={handleUserImgChange}
-            accept='image/*'
-            className='appearance-none border rounded-[10px]  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2 block w-full'
-          />
+          
+          <div className="file-upload">
+            <h1 className='text-[20px] my-[10px]'>Your image</h1>
+                    <input
+                        type="file"
+                        onChange={handleUserImgChange}
+                        className="hidden"
+                        id="file-upload"
+                    />
+                    <label
+                        htmlFor="file-upload"
+                        className="upload-label text-black bg-[#444444]  rounded-lg cursor-pointer"
+                        >
+                        <img src="/Messages/upload.png" className='w-[50px]  rounded-full p-1' alt="" />
+                    </label>
+                </div>
           <button type='submit' className='bg-[#444444] hover:bg-black text-white font-bold py-2 px-4 rounded-[10px]  focus:outline-none focus:shadow-outline w-full'>
             Start Chat
           </button>
         </form>
-      ) : (
+
+      ) :(
         <div className="flex flex-col  h-[600px]">
           <div className='bg-[#444444] text-white  py-4 px-6 flex justify-between items-center'>
             <div className='flex flex-row items-center'>
@@ -72,7 +84,7 @@ const Chat = () => {
               {userName || 'Anonymous' }
             </div>
           </div>
-          <div className='flex-1 px-4 py-6 overflow-y-auto'>
+          <div className='flex-1 px-4 py-6 bg-[#ececec] overflow-y-auto'>
             {messages.map((msg, index) => (
               <div key={index} className="flex justify-end mb-2">
                 <div className="bg-black text-white py-2 px-4 rounded-lg max-w-xs break-words relative">

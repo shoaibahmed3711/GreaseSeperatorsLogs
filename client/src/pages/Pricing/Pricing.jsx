@@ -6,12 +6,12 @@ const Pricing = () => {
       <h1 className='text-center text-[4vw] font-black p-[2vw]'>Pay Once, Use forever</h1>
       <p className='text-center text-[1.5vw] font-bold mb-[3vw]'>Get Started with Grease Seperator Log Operator <br />Your Kitchen Draining Partner </p>    
         <div className='flex flex-col items-center justify-center md:flex-row'>
-          <div className='bg-white m-[2vw] p-[2vw] w-[500px] shadow-lg rounded-[0.7vw]'>
+          <div className='bg-white m-[20px] p-[20px] w-[500px] shadow-lg rounded-[0.7vw]'>
           <div>
             <h1 className='text-[30px] font-black'>Monthly</h1>
             <h2 className='text-[15px] font-semibold'>Only for</h2>
             <h1 className='flex flex-row items-center'><h1 className='font-semibold text-[45px]'>€</h1><h1 className='text-[65px] ml-[7px] font-black'>4.99</h1></h1>
-            <button className='w-[400px] h-[50px] text-white rounded-[0.2vw] bg-[#444444] hover:bg-black'>
+            <button className='w-[460px] h-[50px] text-white rounded-[0.2vw] rounded-tl-[] bg-[#444444] hover:bg-black'>
             <Link to='/SubscriptionForm' className='text-[30px] '>
             Subscribe
         </Link>
@@ -27,14 +27,14 @@ const Pricing = () => {
             <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> Tailored for gastronomy businesses, our €5/month subscription provides a comprehensive solution for managing self-inspection and disposal documentation.</p></li>
           </ul>
         </div>
-          <div className='bg-white m-[2vw] p-[2vw] w-[500px] shadow-lg rounded-[0.7vw] '>
+          <div className='bg-white m-[20px] p-[20px] w-[500px] shadow-lg rounded-[0.7vw] '>
           <div>
           <h1 className='text-[30px] font-black'>Yearly</h1>
           <h2 className='text-[15px] font-semibold'>Only for</h2>
           <h1 className='flex flex-row items-center'><h1 className='font-semibold text-[45px]'>€</h1><h1 className='text-[65px] ml-[7px] font-black'>49.99</h1></h1>
           </div>
-          <button className='w-[400px] h-[50px] text-white rounded-[0.2vw] bg-[#444444] hover:bg-black'>
-            <Link to='/SubscriptionForm' className='text-[30px] '>
+          <button className='w-[460px]  h-[50px] text-white rounded-[0.2vw] bg-[#444444] hover:bg-black'>
+            <Link to='/SubFormYear' className='text-[30px] '>
             Subscribe
         </Link>
             </button>

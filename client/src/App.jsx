@@ -15,6 +15,7 @@ import Logs from './pages/dashboard/pages/Logs';
 import Feedback from './pages/Feedback/Feedback';
 import SubscriptionForm from './pages/Pricing/SubscriptionForm';
 import Chat from './pages/Help/Chat';
+import SubFormYear from './pages/Pricing/SubFormYear';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -122,6 +123,10 @@ const router = createBrowserRouter([
   {
     path: "/SubscriptionForm",
     element:<><Header /><SubscriptionForm /></> ,
+  },
+  {
+    path: "/SubFormYear",
+    element:<><Header /><SubFormYear /></> ,
   },
   {
     path: "/Chat",

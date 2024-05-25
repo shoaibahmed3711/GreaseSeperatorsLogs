@@ -5,7 +5,7 @@ import { Elements, CardElement, useStripe, useElements } from '@stripe/react-str
 
 const stripePromise = loadStripe('your-stripe-public-key-here');
 
-const SubscriptionForm = () => {
+const SubFormYear = () => {
   return (
     <Elements stripe={stripePromise}>
       <SubscriptionFormContent />
@@ -71,7 +71,7 @@ const SubscriptionFormContent = () => {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-4 border border-gray-300 rounded-lg shadow-lg">
-      <h2 className="text-lg font-semibold mb-4">Subscribe to our Monthly Plan for €5</h2>
+      <h2 className="text-lg font-semibold mb-4">Subscribe to our Yearly Plan for €50</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -132,4 +132,4 @@ const SubscriptionFormContent = () => {
   );
 };
 
-export default SubscriptionForm;
+export default SubFormYear;
