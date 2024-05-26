@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import io from 'socket.io-client';
+
+const socket = io('http://localhost:4000');
 
 const Chat = () => {
   const [message, setMessage] = useState('');
@@ -8,6 +11,17 @@ const Chat = () => {
   const [showForm, setShowForm] = useState(true);
   const [error, setError] = useState('');
 
+  
+  useEffect(() => {
+    socket.on('receiveMessage', (message) => {
+      setMessages((prevMessages) => [...prevMessages, message]);
+    });
+
+    return () => {
+      socket.off('receiveMessage');
+    };
+  }, []);
+
   const sendMessage = (e) => {
     e.preventDefault();
     if (!message.trim()) {
@@ -15,7 +29,7 @@ const Chat = () => {
       return;
     }
     const newMessage = { content: message.trim(), sender: userName || 'Anonymous', time: new Date(), image: userImg };
-    setMessages(prevMessages => [...prevMessages, newMessage]);
+    socket.emit('sendMessage', newMessage);
     setMessage('');
     setUserImg('');
     setError('');

@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import io from 'socket.io-client';
 
-// ChatBox component
+const socket = io('http://localhost:4000');
+
 const ChatBox = ({
     chat,
     handleMessageChange,
@@ -11,7 +13,6 @@ const ChatBox = ({
     handleEditMessage,
     handleDeleteMessage,
     handleReaction,
-    handleVoiceMessage,
     darkMode,
     emojiPickerVisible,
     toggleEmojiPicker,
@@ -19,7 +20,7 @@ const ChatBox = ({
 }) => {
     return (
         <div
-            className={`chat-area h-full w-full flex  flex-col  rounded-lg ${
+            className={`chat-area h-full w-full flex flex-col rounded-lg ${
                 darkMode ? 'bg-gray-800 text-black' : 'bg-[#ececec]'
             }`}
         >
@@ -34,7 +35,7 @@ const ChatBox = ({
             </div>
 
             {/* Chat messages in the middle */}
-            <div className="chat-messages flex-grow overflow-y-auto h-56  mb-4">
+            <div className="chat-messages flex-grow overflow-y-auto h-56 mb-4">
                 {chat.messages.map((msg, index) => (
                     <div key={index} className="message my-2 flex items-center">
                         <div
@@ -53,14 +54,14 @@ const ChatBox = ({
                             className="reaction-button ml-2"
                             onClick={() => handleReaction(index)}
                         >
-                            <img src="public/SVG/like.png" className='w-[1.4vw]' alt="" />
+                            <img src="public/SVG/like.png" className="w-[1.4vw]" alt="" />
                         </button>
                         {/* Delete button */}
                         <button
                             className="delete-button ml-2 text-red-500"
                             onClick={() => handleDeleteMessage(index)}
                         >
-                            <img src="public/SVG/Tarsh.png" className='w-[1.4vw]' alt="" />
+                            <img src="public/SVG/Tarsh.png" className="w-[1.4vw]" alt="" />
                         </button>
                     </div>
                 ))}
@@ -85,7 +86,7 @@ const ChatBox = ({
                         htmlFor="file-upload"
                         className="upload-label text-black px-4 py-2 rounded-lg cursor-pointer"
                     >
-                        <img src="/Messages/upload.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
+                        <img src="/Messages/upload.png" className="w-[3vw] hover:bg-gray-600 rounded-full p-1" alt="" />
                     </label>
                 </div>
 
@@ -94,7 +95,7 @@ const ChatBox = ({
                     className="emoji-picker-button text-black px-4 py-2 rounded-lg cursor-pointer"
                     onClick={toggleEmojiPicker}
                 >
-                    <img src="/Messages/emoji.png" className='w-[3vw] hover:bg-gray-600 rounded-full p-1' alt="" />
+                    <img src="/Messages/emoji.png" className="w-[3vw] hover:bg-gray-600 rounded-full p-1" alt="" />
                 </button>
 
                 {/* Emoji picker */}
@@ -108,16 +109,16 @@ const ChatBox = ({
                         <button onClick={() => handleEmojiClick('😂')}>
                             😂
                         </button>
-                        <button onClick={() => handleEmojiClick('😂')}>
+                        <button onClick={() => handleEmojiClick('❤')}>
                             ❤
                         </button>
-                        <button onClick={() => handleEmojiClick('😂')}>
+                        <button onClick={() => handleEmojiClick('👍')}>
                             👍
                         </button>
-                        <button onClick={() => handleEmojiClick('😂')}>
+                        <button onClick={() => handleEmojiClick('👌')}>
                             👌
                         </button>
-                        <button onClick={() => handleEmojiClick('😂')}>
+                        <button onClick={() => handleEmojiClick('😢')}>
                             😢
                         </button>
                         {/* Add more emojis */}
@@ -136,15 +137,14 @@ const ChatBox = ({
                 />
 
                 {/* Send button */}
-                <button
-                    onClick={handleSendMessage}>
-                   <img src="/Messages/send.png" className='w-[3vw]  rounded-full p-1' alt="" />
+                <button onClick={handleSendMessage}>
+                    <img src="/Messages/send.png" className="w-[3vw] rounded-full p-1" alt="" />
                 </button>
             </div>
         </div>
     );
 };
-
+// ChatSystem component
 // ChatSystem component
 const ChatSystem = ({ userName, userImageURL }) => {
     // State to store the list of chats, selected chat index, and current message input
@@ -157,6 +157,30 @@ const ChatSystem = ({ userName, userImageURL }) => {
     const [archivedChats, setArchivedChats] = useState([]);
     const [darkMode, setDarkMode] = useState(false);
     const [emojiPickerVisible, setEmojiPickerVisible] = useState(false);
+
+    useEffect(() => {
+        const handleReceiveMessage = (message) => {
+            const currentTime = new Date().toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit',
+            });
+
+            // Assuming messages are stored under chats[selectedChatIndex].messages
+            const updatedChats = [...chats];
+            updatedChats[selectedChatIndex].messages.push({
+                ...message,
+                time: currentTime,
+            });
+
+            setChats(updatedChats);
+        };
+
+        socket.on('receiveMessage', handleReceiveMessage);
+
+        return () => {
+            socket.off('receiveMessage', handleReceiveMessage);
+        };
+    }, [chats, selectedChatIndex]);
 
     // Function to handle input changes
     const handleMessageChange = (e) => {
@@ -216,8 +240,8 @@ const ChatSystem = ({ userName, userImageURL }) => {
         setUnreadCount(updatedUnreadCount);
     };
 
-    // Function to handle file uploads
-    const handleFileUpload = (e) => {
+     // Function to handle file uploads
+     const handleFileUpload = (e) => {
         const file = e.target.files[0];
         if (file && selectedChatIndex !== null) {
             const reader = new FileReader();
@@ -263,7 +287,6 @@ const ChatSystem = ({ userName, userImageURL }) => {
         alert('Reaction added to message!');
     };
 
-
     // Function to toggle dark mode
     const handleDarkModeToggle = () => {
         setDarkMode(!darkMode);
@@ -280,18 +303,12 @@ const ChatSystem = ({ userName, userImageURL }) => {
         setEmojiPickerVisible(false);
     };
 
-    // Function to pin a chat
-    const handlePinChat = (chatIndex) => {
-        // Implement your pin chat logic here
-        alert('Pin chat feature coming soon!');
-    };
-
-
     // Filter chats based on search query
     const filteredChats = chats.filter((chat) =>
         chat.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    
     return (
         <div
             className={`chat-system absolute flex flex-row right-[1.4vw] top-[13vh] ${
@@ -355,14 +372,6 @@ const ChatSystem = ({ userName, userImageURL }) => {
                                     {unreadCount[index]}
                                 </span>
                             )}
-                            {/* Pin chat */}
-                            <button
-                                className="pin-chat-button"
-                                onClick={() => handlePinChat(index)}
-                            >
-                                <img src="/Messages/pin.png" className='w-[3vw] rounded-full p-1' alt="" />
-                            </button>
-                           
                             {/* Delete chat */}
                             <button
                                 onClick={() => handleDeleteChat(index)}
@@ -407,7 +416,5 @@ const ChatSystem = ({ userName, userImageURL }) => {
                 )}
             </div>
         </div>
-    );
-};
-
+    )}
 export default ChatSystem;
