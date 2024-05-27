@@ -26,13 +26,11 @@ const Dashboard = () => {
             className="w-[3vw] rounded-[0.2vw]"
             alt="icon"
           />
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col w-[10vw] justify-center">
             <h1 className="text-black font-roboto font-extrabold text-[1.2vw]">
-              Shoaib Ahmed
+              Admin
             </h1>
-            <h1 className="text-black font-roboto font-bold text-[0.8vw]">
-              xxxxxxxxxxx@gmail.com
-            </h1>
+            
           </div>
         </div>
         <div className="flex flex-col mt-[3vw]">

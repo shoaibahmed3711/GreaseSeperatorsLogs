@@ -21,37 +21,37 @@ const ChatBox = ({
     return (
         <div
             className={`chat-area h-full w-full flex flex-col rounded-lg ${
-                darkMode ? 'bg-gray-800 text-black' : 'bg-[#ececec]'
+                darkMode ? 'bg-gray-800 text-white' : 'bg-white'
             }`}
         >
             {/* User profile at the top */}
-            <div className="user-profile flex bg-[#444444] rounded-t-lg p-[20px] h-[70px] items-center mb-4">
+            <div className="user-profile flex bg-[#444444] rounded-t-lg p-[1.4vw] h-[4vw] items-center ">
                 <img
                     src={chat.userImageURL}
                     alt={chat.userName}
-                    className="w-10 h-10 rounded-full mr-3"
+                    className="w-[3vw] rounded-full mr-[1vw]"
                 />
-                <p className="font-semibold">{chat.userName}</p>
+                <p className="font-semibold text-[1.2vw]">{chat.userName}</p>
             </div>
 
             {/* Chat messages in the middle */}
-            <div className="chat-messages flex-grow overflow-y-auto h-56 mb-4">
+            <div className="chat-messages flex-grow overflow-y-auto p-[1vw]">
                 {chat.messages.map((msg, index) => (
-                    <div key={index} className="message my-2 flex items-center">
+                    <div key={index} className="message my-[0.5vw] flex items-center">
                         <div
                             className={`message-content ${
                                 msg.edited ? 'italic' : ''
-                            } flex-grow bg-gray-300 text-black p-2 rounded-lg max-w-max`}
+                            } flex-grow bg-[#444444] text-white text-[1vw] p-[0.5vw] rounded-lg max-w-max`}
                             onClick={() => handleEditMessage(index)}
                         >
                             {msg.text}
                         </div>
-                        <span className="text-xs text-gray-600 mt-1 ml-2">
+                        <span className="text-[0.8vw] text-gray-600 ml-[0.4vw]">
                             {msg.time}
                         </span>
                         {/* Reactions */}
                         <button
-                            className="reaction-button ml-2"
+                            className="reaction-button ml-[1vw]"
                             onClick={() => handleReaction(index)}
                         >
                             <img src="public/SVG/like.png" className="w-[1.4vw]" alt="" />
@@ -73,7 +73,7 @@ const ChatBox = ({
             </div>
 
             {/* Input area at the bottom */}
-            <div className="input-area flex space-x-2 px-[20px] items-center">
+            <div className="input-area flex bg-[#444444] space-x-[0.2vw] px-[2vw] items-center">
                 {/* File upload input */}
                 <div className="file-upload">
                     <input
@@ -84,25 +84,23 @@ const ChatBox = ({
                     />
                     <label
                         htmlFor="file-upload"
-                        className="upload-label text-black px-4 py-2 rounded-lg cursor-pointer"
+                        className="upload-label text-black px-[0.2vw] rounded-[0.3vw] cursor-pointer"
                     >
-                        <img src="/Messages/upload.png" className="w-[3vw]  rounded-full p-1" alt="" />
+                        <img src="/Messages/upload.png" className="w-[3vw] rounded-full p-[0.4vw]" alt="" />
                     </label>
                 </div>
 
                 {/* Emoji picker toggle */}
                 <button
-                    className="emoji-picker-button text-black px-4 py-2 rounded-lg cursor-pointer"
+                    className="emoji-picker-button text-black px-[0.3vw] py-[0.3vw] rounded-lg cursor-pointer"
                     onClick={toggleEmojiPicker}
                 >
-                    <img src="/Messages/emoji.png" className="w-[3vw]  rounded-full p-1" alt="" />
+                    <img src="/Messages/emoji.png" className="w-[3vw] rounded-full p-[0.1vw]" alt="" />
                 </button>
 
                 {/* Emoji picker */}
                 {emojiPickerVisible && (
-                    <div className="emoji-picker flex flex-">
-                        {/* Implement emoji picker here */}
-                        {/* For example: */}
+                    <div className="emoji-picker flex flex-row">
                         <button onClick={() => handleEmojiClick('😊')}>
                             😊
                         </button>
@@ -130,15 +128,15 @@ const ChatBox = ({
                     type="text"
                     value={message}
                     onChange={handleMessageChange}
-                    className={`flex-grow px-3 py-2 border ${
+                    className={`flex-grow px-[0.5vw] py-[0.6vw] border ${
                         darkMode ? 'bg-gray-600' : 'border-gray-100'
-                    } rounded-lg`}
+                    } rounded-[0.3vw]`}
                     placeholder="Type a message..."
                 />
 
                 {/* Send button */}
                 <button onClick={handleSendMessage}>
-                    <img src="/Messages/send.png" className="w-[3vw] rounded-full p-1" alt="" />
+                    <img src="/Messages/send.png" className="w-[3vw] rounded-[0.3vw] p-[0.1vw]" alt="" />
                 </button>
             </div>
         </div>
@@ -333,7 +331,7 @@ const ChatSystem = ({ userName, userImageURL }) => {
             <div
                 className={`left-sidebar w-[40vw] ${
                     darkMode ? 'bg-gray-800' : 'bg-white'
-                } rounded-[0.7vw] m-[1vw] overflow-y-auto p-4`}
+                } rounded-[0.7vw] m-[1vw] overflow-y-auto p-[0.5vw]`}
             >
                 <div className='flex flew-row'>
 
@@ -342,17 +340,16 @@ const ChatSystem = ({ userName, userImageURL }) => {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className={`search-bar flex-grow px-3 py-2  border ${
+                    className={`search-bar flex-grow px-[0.7vw] py-[0.4vw]  border ${
                         darkMode ? 'bg-gray-600' : ''
-                    } rounded-lg`}
+                    } rounded-[0.3vw]`}
                     placeholder="Search chats..."
                     />
 
                 {/* Button to create a new chat */}
                 <button
                     onClick={handleNewChat}
-                    className={`new-chat-btn font-roboto text-2xl mx-1 text-center w-[3vw] hover:bg-gray-300 p-1
-                         text-gray-100 rounded-full`}
+                    className={`new-chat-btn font-roboto text-[1.3vw] mx-[0.51vw] text-center w-[3vw]  p-[0.1vw] text-gray-100 rounded-[0.3vw]`}
                     >
                     <img src="/Report/add.png"  alt="" />
                 </button>
@@ -360,7 +357,7 @@ const ChatSystem = ({ userName, userImageURL }) => {
                 {/* Toggle dark mode */}
                 <button
                     onClick={handleDarkModeToggle}
-                    className="dark-mode-toggle w-[3vw] font-roboto text-2xl  items-center  rounded-full"
+                    className="dark-mode-toggle w-[3vw] font-roboto text-[1.3vw]  items-center  rounded-[0.3vw]"
                     >
                    <img src="/Messages/theme.png"  alt="" />
                 </button>
@@ -370,7 +367,7 @@ const ChatSystem = ({ userName, userImageURL }) => {
                 {filteredChats.map((chat, index) => (
                     <div
                     key={index}
-                    className={`chat-item h-[60px] p-2 my-2 rounded-lg ${
+                    className={`chat-item h-[4vw] p-[1vw] my-[0.5vw] rounded-[0.3vw] ${
                         darkMode ? 'bg-gray-700' : 'bg-[#444444] hover:[#ececec]'
                     } hover:bg-gray-400 flex justify-between`}
                     onClick={() => setSelectedChatIndex(index)}
@@ -381,17 +378,17 @@ const ChatSystem = ({ userName, userImageURL }) => {
                     <img
                         src={chat.userImageURL}
                         alt={chat.userName}
-                        className="w-10  h-10 rounded-full mr-2"
+                        className="w-[3vw]  rounded-[0.3vw] mr-[0.4vw]"
                         />
                     <span className="chat-name cursor-pointer">
                         {chat.userName}
                     </span>
                         </div>
                     {/* Chat actions */}
-                    <div className="chat-actions flex gap-2">
+                    <div className="chat-actions flex gap-[0.3vw]">
                         {/* Unread message count */}
                         {unreadCount[index] > 0 && (
-                            <span className="unread-count bg-red-500 text-white rounded-full px-2">
+                            <span className="unread-count bg-red-500 text-white rounded-[0.3vw] px-2">
                                 {unreadCount[index]}
                             </span>
                         )}
@@ -445,8 +442,8 @@ const ChatSystem = ({ userName, userImageURL }) => {
             {/* Right: ChatBox with the selected chat */}
             <div
                 className={`right-chatbox w-[90vw] ${
-                    darkMode ? 'bg-gray-800' : 'bg-blue-100'
-                } rounded-[0.7vw] m-[1vw] p-4 overflow-y-auto`}
+                    darkMode ? 'bg-gray-800' : ''
+                } rounded-[0.7vw] m-[1vw]  overflow-y-auto`}
             >
                 {selectedChatIndex !== null ? (
                     <ChatBox
@@ -465,7 +462,7 @@ const ChatSystem = ({ userName, userImageURL }) => {
                         handleEmojiClick={handleEmojiClick}
                     />
                 ) : (
-                    <div className='flex flex-col items-center my-[130px] justify-center'>
+                    <div className='flex flex-col items-center my-[13vw] justify-center'>
                         <img src="/Dashboard/messages.png" className='w-[150px]' alt="" />
                         <h1>
                             Select a chat
