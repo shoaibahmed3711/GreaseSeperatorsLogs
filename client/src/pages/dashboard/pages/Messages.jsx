@@ -86,7 +86,7 @@ const ChatBox = ({
                         htmlFor="file-upload"
                         className="upload-label text-black px-4 py-2 rounded-lg cursor-pointer"
                     >
-                        <img src="/Messages/upload.png" className="w-[3vw] hover:bg-gray-600 rounded-full p-1" alt="" />
+                        <img src="/Messages/upload.png" className="w-[3vw]  rounded-full p-1" alt="" />
                     </label>
                 </div>
 
@@ -95,7 +95,7 @@ const ChatBox = ({
                     className="emoji-picker-button text-black px-4 py-2 rounded-lg cursor-pointer"
                     onClick={toggleEmojiPicker}
                 >
-                    <img src="/Messages/emoji.png" className="w-[3vw] hover:bg-gray-600 rounded-full p-1" alt="" />
+                    <img src="/Messages/emoji.png" className="w-[3vw]  rounded-full p-1" alt="" />
                 </button>
 
                 {/* Emoji picker */}
@@ -154,9 +154,12 @@ const ChatSystem = ({ userName, userImageURL }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [isTyping, setIsTyping] = useState(false);
     const [unreadCount, setUnreadCount] = useState({});
-    const [archivedChats, setArchivedChats] = useState([]);
     const [darkMode, setDarkMode] = useState(false);
     const [emojiPickerVisible, setEmojiPickerVisible] = useState(false);
+    const [formVisible, setFormVisible] = useState(false);
+    const [newChatName, setNewChatName] = useState('');
+    const [newChatImageURL, setNewChatImageURL] = useState('');
+
 
     useEffect(() => {
         const handleReceiveMessage = (message) => {
@@ -188,6 +191,8 @@ const ChatSystem = ({ userName, userImageURL }) => {
         setIsTyping(true);
     };
 
+    
+    
     // Function to send a message in the selected chat
     const handleSendMessage = () => {
         if (selectedChatIndex !== null && message.trim() !== '') {
@@ -212,21 +217,30 @@ const ChatSystem = ({ userName, userImageURL }) => {
         }
     };
 
+    const handleAddChat = () => {
+        if (newChatName.trim() !== '' && newChatImageURL.trim() !== '') {
+            const newChat = {
+                userName: newChatName,
+                userImageURL: newChatImageURL,
+                name: `Chat ${chats.length + 1}`,
+                messages: [],
+            };
+            setChats([...chats, newChat]);
+            setSelectedChatIndex(chats.length);
+            setUnreadCount({
+                ...unreadCount,
+                [chats.length]: 0,
+            });
+            setFormVisible(false);
+            setNewChatName('');
+            setNewChatImageURL('');
+        }
+    };
+    
+
     // Function to create a new chat
     const handleNewChat = () => {
-        const newChat = {
-            userName,
-            userImageURL,
-            name: `Chat ${chats.length + 1}`,
-            messages: [],
-        };
-        setChats([...chats, newChat]);
-        setSelectedChatIndex(chats.length);
-        // Add to unread count
-        setUnreadCount({
-            ...unreadCount,
-            [chats.length]: 0,
-        });
+        setFormVisible(true);
     };
 
     // Function to delete a chat
@@ -355,34 +369,78 @@ const ChatSystem = ({ userName, userImageURL }) => {
                 {/* Display filtered chats */}
                 {filteredChats.map((chat, index) => (
                     <div
-                        key={index}
-                        className={`chat-item h-[60px] p-2 my-2 rounded-lg ${
-                            darkMode ? 'bg-gray-700' : 'bg-[#444444] hover:[#ececec]'
-                        } hover:bg-gray-400 flex justify-between`}
-                        onClick={() => setSelectedChatIndex(index)}
-                    >
-                        <span className="chat-name cursor-pointer">
-                            {chat.name}
-                        </span>
-                        {/* Chat actions */}
-                        <div className="chat-actions flex gap-2">
-                            {/* Unread message count */}
-                            {unreadCount[index] > 0 && (
-                                <span className="unread-count bg-red-500 text-white rounded-full px-2">
-                                    {unreadCount[index]}
-                                </span>
-                            )}
-                            {/* Delete chat */}
-                            <button
-                                onClick={() => handleDeleteChat(index)}
-                                className="delete-chat-btn text-red-500"
-                            >
-                                <img src="/Messages/Trash.png" className='w-[2vw]  rounded-full p-1' alt="" />
-                            </button>
+                    key={index}
+                    className={`chat-item h-[60px] p-2 my-2 rounded-lg ${
+                        darkMode ? 'bg-gray-700' : 'bg-[#444444] hover:[#ececec]'
+                    } hover:bg-gray-400 flex justify-between`}
+                    onClick={() => setSelectedChatIndex(index)}
+                >
+                    <div className='flex flex-row items-center'>
+
+                    {/* Display user image */}
+                    <img
+                        src={chat.userImageURL}
+                        alt={chat.userName}
+                        className="w-10  h-10 rounded-full mr-2"
+                        />
+                    <span className="chat-name cursor-pointer">
+                        {chat.userName}
+                    </span>
                         </div>
+                    {/* Chat actions */}
+                    <div className="chat-actions flex gap-2">
+                        {/* Unread message count */}
+                        {unreadCount[index] > 0 && (
+                            <span className="unread-count bg-red-500 text-white rounded-full px-2">
+                                {unreadCount[index]}
+                            </span>
+                        )}
+                        {/* Delete chat */}
+                        <button
+                            onClick={() => handleDeleteChat(index)}
+                            className="delete-chat-btn text-red-500"
+                        >
+                            <img src="/Messages/Trash.png" className='w-[2vw]  rounded-full p-1' alt="" />
+                        </button>
                     </div>
+                </div>
+                
                 ))}
             </div>
+
+            {formVisible && (
+    <div className="new-chat-form absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl mb-4">Add New Chat</h2>
+            <input
+                type="text"
+                value={newChatName}
+                onChange={(e) => setNewChatName(e.target.value)}
+                placeholder="Enter name"
+                className="mb-4 px-3 py-2 border rounded w-full"
+            />
+            <input
+                type="text"
+                value={newChatImageURL}
+                onChange={(e) => setNewChatImageURL(e.target.value)}
+                placeholder="Enter image URL"
+                className="mb-4 px-3 py-2 border rounded w-full"
+            />
+            <button
+                onClick={handleAddChat}
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+                OK
+            </button>
+            <button
+                onClick={() => setFormVisible(false)}
+                className="bg-red-500 text-white px-4 py-2 rounded ml-2"
+            >
+                Cancel
+            </button>
+        </div>
+    </div>
+)}
 
             {/* Right: ChatBox with the selected chat */}
             <div

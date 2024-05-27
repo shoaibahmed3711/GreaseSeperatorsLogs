@@ -187,7 +187,7 @@ const filteredRows = rows.filter((row) => {
               <img src="public/Report/newuser.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
-                <h1 className='font-bold text-[1.5vw]'>1.33k</h1>
+                <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
                 <Line data={chartData} options={chartOptions} />
                 </div>
@@ -200,7 +200,7 @@ const filteredRows = rows.filter((row) => {
               <img src="public/Report/unique.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
-                <h1 className='font-bold text-[1.5vw]'>230</h1>
+                <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
                 <Line data={chartData} options={chartOptions} />
                 </div>
@@ -215,7 +215,7 @@ const filteredRows = rows.filter((row) => {
               <img src="public/Report/tags.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
-                <h1 className='font-bold text-[1.5vw]'>110</h1>
+                <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
                 <Line data={chartData} options={chartOptions} />
                 </div>
@@ -227,7 +227,7 @@ const filteredRows = rows.filter((row) => {
               <img src="public/Report/visits.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
-                <h1 className='font-bold text-[1.5vw]'>1.98k</h1>
+                <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
                 <Line data={chartData} options={chartOptions} />
                 </div>

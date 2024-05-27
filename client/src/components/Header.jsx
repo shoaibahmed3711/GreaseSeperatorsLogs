@@ -10,7 +10,6 @@ const Header = () => {
     { path: "/Pricing", label: "Pricing" },
     { path: "/Help", label: "Help" },
     { path: "/Feedback", label: "Feedback" },
-    { path: "/Index", label: "Index" },
   ];
   return (
     <div className="bg-[#444444]  h-[4vw] flex flex-row justify-between px-[4vw]">
