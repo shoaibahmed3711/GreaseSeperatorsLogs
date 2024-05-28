@@ -20,7 +20,7 @@ const Login = () => {
       <div className="flex flex-row justify-center gap-36 pt-10">
         <div className="flex flex-col justify-center bg-[#444444] rounded-md px-[2vw] py-[2vw]">
           <div className="flex justify-center mb-6">
-            <img src="/logo.png" className="w-[10vw] " alt="icon" />
+            <img src="/logo.png" className="w-[10vw]" alt="icon" />
           </div>
           <form onSubmit={handleLogin}>
             <div className="flex flex-col mb-4">
@@ -28,7 +28,7 @@ const Login = () => {
               <input
                 type="text"
                 id="username"
-                className="border border-gray-400  rounded-sm w-96 px-2 h-10"
+                className="border border-gray-400 rounded-sm w-96 px-2 h-10"
                 required
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -39,7 +39,7 @@ const Login = () => {
               <input
                 type="password"
                 id="password"
-                className="border border-gray-400  rounded-sm w-96 px-2 h-10"
+                className="border border-gray-400 rounded-sm w-96 px-2 h-10"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

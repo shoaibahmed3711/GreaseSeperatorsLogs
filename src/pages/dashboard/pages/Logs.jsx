@@ -167,7 +167,7 @@ const Logs = () => {
               className="w-[3vw]  mx-[0.5vw] rounded-md"
               onClick={handleFilter}
             >
-              <img src="/Logs/filter.png" alt="" />
+              <img src="/filter.png" alt="" />
             </button>
             <button
               className="w-[3vw]  mx-[0.5vw] rounded-md"
