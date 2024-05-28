@@ -72,8 +72,8 @@ const Feedback = () => {
   return (
     <div className="flex flex-row h-screen">
       <div className="w-[60vw] bg-white shadow-lg text-black rounded-md ml-[4vw] h-screen flex flex-col">
-        <h1 className="font-black text-[3vw] ml-[3vw]">Feedback</h1>
-        <h1 className="font-bold text-[2vw] ml-[3vw]">Do you have any Questions,<br /> <i>Suggestions</i> or <i>feedback?</i><br /> We'd love to hear from you</h1>
+        <h1 className="font-black text-[3vw] ml-[3vw]">Rückmeldung</h1>
+        <h1 className="font-bold text-[2vw] ml-[3vw]">Haben Sie irgendwelche Fragen,<br /> <i>Vorschläge</i> or <i>Rückmeldung?</i><br /> Wir würden uns freuen, von Ihnen zu hören</h1>
         <div className="overflow-y-auto flex-grow">
           {feedbacks.map((feedback, index) => (
             <div className="feedback p-[1vw] ml-[1vw]" key={index}>

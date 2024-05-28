@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 const Pricing = () => {
   return (
     <div className='bg-[#ececec]'>
-      <h1 className='text-center text-[4vw] font-black p-[2vw]'>Pay Once, Use forever</h1>
-      <p className='text-center text-[1.5vw] font-bold mb-[3vw]'>Get Started with Grease Seperator Log Operator <br />Your Kitchen Draining Partner </p>    
+      <h1 className='text-center text-[4vw] font-black p-[2vw]'>Einmal zahlen, für immer nutzen</h1>
+      <p className='text-center text-[1.5vw] font-bold mb-[3vw]'>Beginnen Sie mit dem Betriebsprotokoll des Fettabscheiders <br />Ihr Partner für die Küchenentwässerung</p>
         <div className='flex flex-col items-center justify-center md:flex-row'>
           <div className='bg-white m-[20px] p-[20px] w-[500px] shadow-lg rounded-[0.7vw]'>
           <div>
@@ -18,13 +18,13 @@ const Pricing = () => {
             </button>
           </div>
           <ul>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> For just €5 per month, our gastronomy-focused subscription offers monthly disposal documentation, self-inspection record management, and convenient digital storage.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> Gastronomy subscription: easy disposal documentation, compliant record-keeping, accessible historical data, all for a low fee.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> Our subscription digitally manages self-inspection records for gastronomy businesses, ensuring regulatory compliance for €5 monthly.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> For just €5 monthly, our subscription provides gastronomy businesses secure digital storage, ensuring easy access and data integrity.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> For €5 monthly, our subscription assists gastronomy businesses in managing self-inspection records digitally, ensuring legal compliance and peace of mind.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> Our €5/month subscription provides gastronomy businesses a flexible, affordable solution for managing operational records, ensuring compliance and tailored digital storage.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> Tailored for gastronomy businesses, our €5/month subscription provides a comprehensive solution for managing self-inspection and disposal documentation.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p> Für nur 5 € pro Monat bietet unser gastronomisches Abo eine monatliche Entsorgungsdokumentation, eine Selbstkontrollprotokollverwaltung und eine praktische digitale Speicherung.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Gastronomie-Abo: einfache Entsorgungsdokumentation, gesetzeskonforme Aufzeichnungen, zugängliche historische Daten, alles zu einem geringen Preis.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p> Unser Abonnement verwaltet die Selbstkontrollunterlagen für Gastronomiebetriebe digital und stellt die Einhaltung gesetzlicher Vorschriften für 5 € monatlich sicher.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Für nur 5 € monatlich bietet unser Abonnement Gastronomiebetrieben eine sichere digitale Speicherung, die einfachen Zugriff und Datenintegrität gewährleistet.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p> Für 5 € monatlich unterstützt unser Abonnement Gastronomiebetriebe bei der digitalen Verwaltung von Selbstkontrollunterlagen und sorgt so für die Einhaltung gesetzlicher Vorschriften und Sicherheit.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p> Unser Abonnement für 5 €/Monat bietet Gastronomiebetrieben eine flexible, kostengünstige Lösung für die Verwaltung von Betriebsunterlagen, die Sicherstellung von Compliance und eine maßgeschneiderte digitale Speicherung.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p> Unser auf Gastronomiebetriebe zugeschnittenes Abonnement für 5 €/Monat bietet eine umfassende Lösung zur Verwaltung der Eigenkontrolle und Entsorgungsdokumentation.</p></li>
           </ul>
         </div>
           <div className='bg-white m-[20px] p-[20px] w-[500px] shadow-lg rounded-[0.7vw] '>
@@ -39,13 +39,13 @@ const Pricing = () => {
         </Link>
             </button>
           <ul>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p> Our yearly subscription, priced at €50, ensures effortless digital document storage, quick access to historical data, and regulatory compliance.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p>For a flat fee of €50 per year, our subscription provides seamless digital document storage, quick access to historical data, and regulatory compliance for gastronomy businesses.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p>Annual subscription: €50. Reliable digital storage for gastronomy. Swift data access, regulatory compliance.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p>€50/year subscription: Enhance efficiency with hassle-free digital document storage for gastronomy, ensuring compliance.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p>Gastronomy-focused yearly subscription: secure, efficient digital storage, compliance, €50/year.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p>Enhance efficiency: yearly subscription for €50, providing digital storage, quick data access, and regulatory compliance.</p></li>
-            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[23px] mr-[7px]' alt="" /><p>Affordable and convenient yearly subscription: comprehensive digital document storage for gastronomy businesses, ensuring compliance, for €50/year.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Unser Jahresabonnement zum Preis von 50 € gewährleistet eine mühelose digitale Dokumentenspeicherung, schnellen Zugriff auf historische Daten und die Einhaltung gesetzlicher Vorschriften.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Für eine Pauschalgebühr von 50 € pro Jahr bietet unser Abonnement eine nahtlose digitale Dokumentenspeicherung, schnellen Zugriff auf historische Daten und die Einhaltung gesetzlicher Vorschriften für Gastronomiebetriebe.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Jahresabonnement: 50 €. Zuverlässiger digitaler Speicher für die Gastronomie. Schneller Datenzugriff, Einhaltung gesetzlicher Vorschriften.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Abonnement für 50 €/Jahr: Steigern Sie die Effizienz mit der problemlosen digitalen Dokumentenspeicherung für die Gastronomie und stellen Sie so die Compliance sicher.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Gastronomieorientiertes Jahresabonnement: sichere, effiziente digitale Speicherung, Compliance, 50 €/Jahr.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Steigern Sie die Effizienz: Jahresabonnement für 50 €, das digitalen Speicher, schnellen Datenzugriff und die Einhaltung gesetzlicher Vorschriften bietet.</p></li>
+            <li className=' my-[1vw] text-[14px] border-b-[1px] border-[#ececec] py-[5px] flex flex-row'><img src="public/images/tick.png" className='w-[30px] mr-[7px]' alt="" /><p>Erschwingliches und komfortables Jahresabonnement: umfassende digitale Dokumentenablage für Gastronomiebetriebe zur Compliance-Gewährleistung für 50 €/Jahr.</p></li>
           </ul>
         </div>
         </div>
@@ -61,67 +61,67 @@ const Pricing = () => {
           </thead>
           <tbody className=' p-[100px]'>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Monthly disposal documentation. <strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Monatliche Entsorgungsdokumentation. <strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Developed for gastronomy industry.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Entwickelt für die Gastronomie.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Management of self-inspection records.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Verwaltung von Selbstinspektionsaufzeichnungen.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Accessible digital storage.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Zugänglicher digitaler Speicher.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Ensures compliance with regulations.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Sorgt für die Einhaltung von Vorschriften.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Convenient access to historical data.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Bequemer Zugriff auf historische Daten.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Cost-effective solution.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Kosteneffiziente Lösung.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Flexible and affordable pricing.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Flexible und erschwingliche Preisgestaltung.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Comprehensive operational record management.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Umfassendes Betriebsdatenmanagement.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Tailored solution for gastronomy businesses.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Maßgeschneiderte Lösung für Gastronomiebetriebe.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Real-time visibility for grease separator performance.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Echtzeit-Sichtbarkeit der Leistung des Fettabscheiders.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Technical support for digital platforms.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Technischer Support für digitale Plattformen.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Tracking historical data trends.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Verfolgung historischer Datentrends.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
@@ -131,32 +131,32 @@ const Pricing = () => {
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Inaccuracies due to inconsistent data entry.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Ungenauigkeiten aufgrund inkonsistenter Dateneingabe.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Difficulty in integrating with existing systems or workflows.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Schwierigkeiten bei der Integration in bestehende Systeme oder Arbeitsabläufe.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Limited availability of technical support.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Begrenzte Verfügbarkeit des technischen Supports.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Complexity in managing access rights.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Komplexität bei der Verwaltung von Zugriffsrechten.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>Inability to track maintenance and repair history effectively.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Unfähigkeit, den Wartungs- und Reparaturverlauf effektiv zu verfolgen.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
-              <td className='px-[20px] py-[20px]'>High costs associated with manual record-keeping.<strong>?</strong></td>
+              <td className='px-[20px] py-[20px]'>Hohe Kosten im Zusammenhang mit der manuellen Aufzeichnung.<strong>?</strong></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
               <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>

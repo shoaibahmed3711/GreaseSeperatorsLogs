@@ -4,259 +4,256 @@ const Problems = () => {
   return (
     <div>
       <div className="flex flex-col flex-wrap bg-[#ececec] mx-auto">
-        <h1 className="text-center text-[4.3vw] font-black mx-auto  mt-[2vw] flex flex-col"><strong>What Grease Seperator Log</strong><strong>Operator Do For You?</strong></h1>
-        <h1 className="text-center text-[1.9vw]  mt-[2vw] flex flex-col"><strong>Operate Your Mission Critical Business more</strong><strong>Effectively and Profitably</strong></h1>
-        <h1 className="text-center text-[3vw] mx-auto font-bold mt-[4vw] flex flex-col">Our Solution for</h1>
+        <h1 className="text-center text-[4.3vw] font-black mx-auto  mt-[2vw] flex flex-col"><strong>Welches Fettabscheiderprotokoll</strong><strong>Der Betreiber erledigt das für Sie?</strong></h1>
+        <h1 className="text-center text-[1.9vw]  mt-[2vw] flex flex-col"><strong>Betreiben Sie Ihr unternehmenskritisches Unternehmen besser</strong><strong>Effektiv und profitabel</strong></h1>
+        <h1 className="text-center text-[3vw] mx-auto font-bold mt-[4vw] flex flex-col">Unsere Lösung für</h1>
         <div className="flex flex-col mx-auto lg:flex-row ">
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
             <img src="public/problem/1.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Maintaining and organizing analog.
+            Analog pflegen und organisieren.
             </h1>
             <p className=" text-[12px]">
-              Transition to a digital platform for easy access and management of
-              records. Implement a cloud-based system where data can be securely
-              stored and accessed anytime, anywhere.
+            Übergang zu einer digitalen Plattform für einfachen Zugriff und einfache Verwaltung
+              Aufzeichnungen. Implementieren Sie ein cloudbasiertes System, in dem Daten sicher gespeichert werden können
+              jederzeit und überall gespeichert und abrufbar.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/2.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Risk of losing operating logs.
+            Gefahr des Verlusts von Betriebsprotokollen.
             </h1>
             <p className=" text-[12px]">
-              Digitalization ensures data integrity and eliminates the risk of
-              physical loss. Encourage regular backups to prevent data loss.
+            Die Digitalisierung gewährleistet die Datenintegrität und eliminiert das Risiko von
+              körperlicher Verlust. Ermutigen Sie zu regelmäßigen Backups, um Datenverlusten vorzubeugen.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/3.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Manual data entry is Time-consuming.
+            Die manuelle Dateneingabe ist zeitaufwändig.
             </h1>
             <p className=" text-[12px]">
-              Automate data entry processes where possible, such as integrating
-              sensors to measure disposal quantities directly into the system.
-              Utilize forms and templates for standardized entries to streamline
-              the process.
+            Automatisieren Sie Dateneingabeprozesse nach Möglichkeit, z. B. die Integration Sensoren zur Messung der Entsorgungsmengen direkt im System. Nutzen Sie zur Optimierung Formulare und Vorlagen für standardisierte Eingaben der Prozess.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/4.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Disposal documentation lacks transparency.
+            Der Entsorgungsdokumentation mangelt es an Transparenz.
             </h1>
             <p className=" text-[12px]">
-              Implement a system where disposal companies can directly input
-              their data, ensuring accuracy and transparency. Provide access to
-              authorities for real-time verification during inspections.
+            Implementieren Sie ein System, bei dem Entsorgungsunternehmen direkt Eingaben vornehmen können
+              ihre Daten, um Genauigkeit und Transparenz zu gewährleisten. Zugriff gewähren auf
+              Behörden zur Echtzeitüberprüfung bei Inspektionen.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col mx-auto lg:flex-row ">
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/5.png" className="w-[50px]" alt="" />
-            <h1 className="font-bold text-[14px]">
-             Transferring operating logs during business transitions is difficult.
+            <h1 className="font-bold text-[12px]">
+            Die Übertragung von Betriebsprotokollen bei Geschäftsübergängen ist schwierig.
             </h1>
             <p className=" text-[12px]">
-              Establish a protocol for transferring ownership of digital logs
-              between business owners. Ensure continuity of access and data
-              integrity during ownership changes.
+            Erstellen Sie ein Protokoll für die Übertragung des Eigentums an digitalen Protokollen
+              zwischen Unternehmern. Stellen Sie die Kontinuität des Zugriffs und der Daten sicher
+              Integrität bei Eigentümerwechseln.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/6.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Tracking maintenance history is ineffective.
+            Die Verfolgung des Wartungsverlaufs ist wirkungslos.
             </h1>
             <p className=" text-[12px]">
-              Incorporate a maintenance log feature within the digital platform
-              to record all maintenance activities and repairs. Include
-              timestamps and details for comprehensive tracking.
+            Integrieren Sie eine Wartungsprotokollfunktion in die digitale Plattform
+              alle Wartungstätigkeiten und Reparaturen zu protokollieren. Enthalten
+              Zeitstempel und Details für eine umfassende Nachverfolgung.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/7.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-            Managing access rights for stakeholders is complex.
+            Die Verwaltung der Zugriffsrechte für Stakeholder ist komplex.
             </h1>
             <p className=" text-[12px]">
-              Develop a user-friendly interface that allows easy management of
-              access rights for different users, such as restaurant owners,
-              waste disposal companies, and authorities.
+            Entwickeln Sie eine benutzerfreundliche Oberfläche, die eine einfache Verwaltung ermöglicht
+              Zugriffsrechte für verschiedene Benutzer, z. B. Restaurantbesitzer,
+              Entsorgungsunternehmen und Behörden.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/8.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Regulatory compliance & maintenance.
+            Einhaltung gesetzlicher Vorschriften und Wartung.
             </h1>
             <p className=" text-[12px]">
-              Customize the digital platform to include compliance checklists
-              and reminders for regulatory tasks. Ensure that all necessary
-              documentation is easily accessible for inspections.
+            Passen Sie die digitale Plattform an, um Compliance-Checklisten einzubinden
+              und Erinnerungen für regulatorische Aufgaben. Stellen Sie sicher, dass alles Notwendige vorhanden ist
+              Die Dokumentation ist für Inspektionen leicht zugänglich.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col mx-auto lg:flex-row ">
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/9.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Limited scalability of analog operating logs.
+            Eingeschränkte Skalierbarkeit analoger Betriebsprotokolle.
             </h1>
             <p className=" text-[12px]">
-              Digital platforms offer scalability, allowing for the addition of
-              new features and functionalities as needed. Regular updates can
-              accommodate evolving business requirements and regulations.
+            Digitale Plattformen bieten Skalierbarkeit und ermöglichen das Hinzufügen von
+              neue Features und Funktionalitäten nach Bedarf. Regelmäßige Updates können
+              Anpassung an sich ändernde Geschäftsanforderungen und Vorschriften.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/10.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Data security concerns with digital storage.
+            Bedenken hinsichtlich der Datensicherheit bei der digitalen Speicherung.
             </h1>
             <p className=" text-[12px]">
-              Implement robust security measures, such as encryption, access
-              controls, and regular security audits, to safeguard sensitive data
-              stored in the digital platform.
+            Implementieren Sie robuste Sicherheitsmaßnahmen wie Verschlüsselung und Zugriff
+              Kontrollen und regelmäßige Sicherheitsüberprüfungen zum Schutz sensibler Daten
+              in der digitalen Plattform gespeichert.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/11.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Difficulty tracking historical data trends.
+            Es ist schwierig, historische Datentrends zu verfolgen.
             </h1>
             <p className=" text-[12px]">
-              Incorporate analytics tools into the digital platform to analyze
-              historical data trends, identify patterns, and make informed
-              decisions for optimization and efficiency improvements.
+            Integrieren Sie Analysetools zur Analyse in die digitale Plattform
+              Historische Datentrends, Erkennung von Mustern und Bereitstellung von Informationen
+              Entscheidungen zur Optimierung und Effizienzsteigerung.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/12.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Resistance to analog-to-digital transition.
+            Widerstand gegen den Übergang von analog zu digital.
             </h1>
             <p className=" text-[12px]">
-              Provide comprehensive training and support to stakeholders to
-              facilitate a smooth transition to digital operations. Highlight
-              the benefits of digitalization, such as improved efficiency and
-              compliance.
+            Bieten Sie den Beteiligten umfassende Schulungen und Unterstützung an
+              erleichtern einen reibungslosen Übergang zum digitalen Betrieb. Markieren
+              die Vorteile der Digitalisierung, wie etwa verbesserte Effizienz und
+              Einhaltung.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col mx-auto lg:flex-row ">
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/13.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-            Inconsistent data entry leads to inaccuracies.
+            Eine inkonsistente Dateneingabe führt zu Ungenauigkeiten.
             </h1>
             <p className=" text-[12px]">
-              Standardize data entry procedures and provide clear guidelines to
-              users. Implement validation checks to ensure data accuracy and
-              integrity.
+            Standardisieren Sie Dateneingabeverfahren und stellen Sie klare Richtlinien bereit
+              Benutzer. Implementieren Sie Validierungsprüfungen, um die Datengenauigkeit sicherzustellen
+              Integrität.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/14.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Remote access to operating logs is challenging.
+            Der Fernzugriff auf Betriebsprotokolle ist eine Herausforderung.
             </h1>
             <p className=" text-[12px]">
-              Enable remote access to the digital platform through web or mobile
-              applications. Utilize cloud-based infrastructure for seamless
-              access from anywhere with an internet connection.
+            Ermöglichen Sie den Fernzugriff auf die digitale Plattform über das Internet oder mobil
+              Anwendungen. Nutzen Sie die cloudbasierte Infrastruktur für nahtlose Prozesse
+              Zugriff von überall mit Internetverbindung.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/15.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-             Limited visibility into maintenance and inspections.
+            Eingeschränkter Einblick in Wartung und Inspektionen.
             </h1>
             <p className=" text-[12px]">
-              Implement automated reminders and notifications for scheduled
-              maintenance tasks and inspections. Keep stakeholders informed in
-              advance to ensure timely compliance.
+            Implementieren Sie automatisierte Erinnerungen und Benachrichtigungen für geplante Termine
+              Wartungsarbeiten und Inspektionen. Halten Sie die Stakeholder auf dem Laufenden
+              im Voraus, um die rechtzeitige Einhaltung sicherzustellen.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/16.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              High costs for manual record-keeping.
+            Hohe Kosten für die manuelle Aufzeichnung.
             </h1>
             <p className=" text-[12px]">
-              Digitalization reduces paperwork and associated costs by
-              eliminating the need for printing, storage, and manual data entry.
-              Calculate cost savings to demonstrate the financial benefits of
-              digital operations.
+            Die Digitalisierung reduziert den Papieraufwand und die damit verbundenen Kosten um
+              Dadurch entfällt die Notwendigkeit des Druckens, Speicherns und der manuellen Dateneingabe.
+              Berechnen Sie Kosteneinsparungen, um die finanziellen Vorteile zu demonstrieren
+              digitale Operationen.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col mx-auto lg:flex-row ">
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/17.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Integration complexity with existing workflows.
+            Komplexität der Integration in bestehende Arbeitsabläufe.
             </h1>
             <p className=" text-[12px]">
-              Collaborate with IT experts to ensure seamless integration of the
-              digital platform with existing systems and workflows. Provide
-              customization options to adapt to specific business needs.
+            Arbeiten Sie mit IT-Experten zusammen, um eine nahtlose Integration sicherzustellen
+              digitale Plattform mit bestehenden Systemen und Arbeitsabläufen. Bieten
+              Anpassungsoptionen zur Anpassung an spezifische Geschäftsanforderungen.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/18.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Real-time visibility.
+            Sichtbarkeit in Echtzeit.
             </h1>
             <p className=" text-[12px]">
-              Implement monitoring sensors within grease separators to provide
-              real-time data on performance metrics such as oil accumulation and
-              water flow rates. Integrate this data into the digital platform
-              for analysis and action.
+            Implementieren Sie Überwachungssensoren in Fettabscheidern
+              Echtzeitdaten zu Leistungskennzahlen wie Ölansammlungen und
+              Wasserdurchflussraten. Integrieren Sie diese Daten in die digitale Plattform
+              für Analyse und Aktion.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/19.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-              Acuracy and Authenticity.
+            Genauigkeit und Authentizität.
             </h1>
             <p className=" text-[12px]">
-              Implement user authentication mechanisms to verify the identity of
-              users accessing the digital platform. Utilize digital signatures
-              and audit trails to track changes and maintain data integrity.
+            Implementieren Sie Benutzerauthentifizierungsmechanismen, um die Identität von zu überprüfen
+              Benutzer, die auf die digitale Plattform zugreifen. Nutzen Sie digitale Signaturen
+              und Audit-Trails, um Änderungen zu verfolgen und die Datenintegrität aufrechtzuerhalten.
             </p>
           </div>
 
-          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
+          <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
           <img src="public/problem/20.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
-            Limited technical support for digital platforms.
+            Begrenzter technischer Support für digitale Plattformen.
             </h1>
             <p className=" text-[12px]">
-              Provide comprehensive technical support and troubleshooting
-              resources to users of the digital platform. Offer training
-              sessions, user guides, and a dedicated support team to address any
-              issues promptly.
+            Bieten Sie umfassenden technischen Support und Fehlerbehebung
+              Ressourcen für Benutzer der digitalen Plattform. Bieten Sie Schulungen an
+              Sitzungen, Benutzerhandbücher und ein engagiertes Support-Team, das sich um alle Anliegen kümmert
+              Probleme zeitnah.
             </p>
           </div>
         </div>

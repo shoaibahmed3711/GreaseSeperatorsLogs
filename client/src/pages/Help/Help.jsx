@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 const Help = () => {
 
@@ -7,43 +7,43 @@ const Help = () => {
     <div className=" flex flex-col shadow-xl  bg-[#ececec] rounded-md p-[1vw]">
     <div className="bg-[#444444] p-[1vw]  text-white mx-auto rounded-[5px] ">
       <h1 className="font-bold text-[28px] text-center">
-        Welcome to Grease Separator Help Center👋
+      Willkommen im Grease Separator Log Help Center👋
       </h1>
       <p className=" text-[14px] text-center">
-        Welcome to the Grease Separator Help Center! This is your go-to
-        resource for all your questions and concerns related to grease
-        separator management in the catering industry. Whether you're a
-        restaurant owner, operator, or maintenance personnel, we're here to
-        provide you with the assistance you need to streamline your operations
-        and ensure compliance with regulations.
+      Willkommen im Fettabscheider-Hilfecenter! Das ist Ihre Anlaufstelle
+        Anlaufstelle für alle Ihre Fragen und Bedenken im Zusammenhang mit Fett
+        Abscheidermanagement in der Gastronomie. Ob Sie ein sind
+        Ob Restaurantbesitzer, Betreiber oder Wartungspersonal, wir sind für Sie da
+        Wir bieten Ihnen die Unterstützung, die Sie zur Optimierung Ihrer Abläufe benötigen
+        und stellen die Einhaltung der Vorschriften sicher.
       </p>
     </div>
     <div className="flex flex-col flex-wrap mx-auto">
       <div className="flex flex-col mx-auto md:flex-row ">
       <div className=" flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
         <img src="public/Help/1.png" className="w-[50px] shadow-lg" alt="" />
-        <h1 className="text-[14px] font-bold mt-[1vw]">Beginnings</h1>
+        <h1 className="text-[14px] font-bold mt-[1vw]">Anfänge</h1>
         <p className="text-[12px]">
-          Discover grease separator basics for German restaurant owners: function, importance, and management responsibilities.
+        Entdecken Sie die Grundlagen des Fettabscheiders für deutsche Restaurantbesitzer: Funktion, Bedeutung und Führungsverantwortung.
         </p>
        
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
         <img src="public/Help/2.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-          Maintenance
+        Wartung
         </h1>
         <p className="text-[12px]">
-          Learn grease separator upkeep: regular inspections, cleaning, and addressing common problems. Efficiently schedule maintenance and handle emergencies.
+        Erfahren Sie mehr über die Wartung von Fettabscheidern: regelmäßige Inspektionen, Reinigung und Behebung häufiger Probleme. Planen Sie Wartungsarbeiten effizient und bewältigen Sie Notfälle.
         </p>
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
         <img src="public/Help/3.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-        Compliance
+        Einhaltung
         </h1>
         <p className="text-[12px]">
-         Recognize documenting grease separator data: disposal records, self-inspection reports, certificates. Maintain updated, accessible records for inspections.
+        Erkennen Sie die Dokumentation von Fettabscheiderdaten: Entsorgungsprotokolle, Selbstkontrollberichte, Zertifikate. Führen Sie aktualisierte, zugängliche Aufzeichnungen für Inspektionen.
         </p>
       </div>
       </div>
@@ -54,25 +54,24 @@ const Help = () => {
         Management
         </h1>
         <p className="text-[12px]">
-        Discover advantages of switching to digital grease separator documentation. Our platform streamlines processes, maintains data integrity, and offers easy access to historical records.
+        Entdecken Sie die Vorteile der Umstellung auf die digitale Fettabscheiderdokumentation. Unsere Plattform optimiert Prozesse, wahrt die Datenintegrität und bietet einfachen Zugriff auf historische Aufzeichnungen.
         </p>
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
       <img src="public/Help/5.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-          Console
+        Konsole
         </h1>
         <p className="text-[12px]">
-        Familiarize yourself with the Grease Separator Console: central hub for maintenance and documentation. Navigate dashboard, upload documents, customize forms, manage permissions.
-        </p>
+        Machen Sie sich mit der Grease Separator Console vertraut: zentraler Knotenpunkt für Wartung und Dokumentation. Navigieren Sie im Dashboard, laden Sie Dokumente hoch, passen Sie Formulare an, verwalten Sie Berechtigungen.        </p>
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
       <img src="public/Help/6.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-          Troubleshoot
+        Fehlerbehebung
         </h1>
         <p className="text-[12px]">
-        If you encounter grease separator or platform issues, consult troubleshooting guides and FAQs. Contact our dedicated support for personalized assistance.
+        Wenn Sie auf Probleme mit dem Fettabscheider oder der Plattform stoßen, lesen Sie die Anleitungen zur Fehlerbehebung und die häufig gestellten Fragen (FAQs). Kontaktieren Sie unseren engagierten Support für individuelle Unterstützung.
         </p>
       </div>
       </div>
@@ -80,34 +79,34 @@ const Help = () => {
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
       <img src="public/Help/7.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-          Updates
+        Aktualisierung
         </h1>
         <p className="text-[12px]">
-         Stay updated on platform and grease separator management: latest enhancements, regulatory changes, and upcoming events.
+        Bleiben Sie über Plattform- und Fettabscheidermanagement auf dem Laufenden: neueste Verbesserungen, regulatorische Änderungen und bevorstehende Veranstaltungen.
         </p>
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
       <img src="public/Help/8.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-          Feedback
+        Rückmeldung
         </h1>
         <p className="text-[12px]">
-        Share feedback to improve platform and services. Your input shapes future grease separator management enhancements. We value your contribution!
+        Teilen Sie Feedback, um Plattform und Dienste zu verbessern. Ihr Beitrag prägt zukünftige Verbesserungen des Fettabscheidermanagements. Wir schätzen Ihren Beitrag!
         </p>
       </div>
       <div className="flex flex-col w-[250px] h-[280px] p-[13px] rounded-[0.4vw] bg-white m-[1vw] gap-[30px]">
       <img src="public/Help/9.png" className="w-[50px] shadow-lg" alt="" />
         <h1 className="text-[14px] font-bold mt-[1vw]">
-         Privacy
+        Privatsphäre
         </h1>
         <p className="text-[12px]">
-          Discover our commitment to data protection: safeguarding your information and adhering to industry best practices for security.
+        Entdecken Sie unser Engagement für den Datenschutz: den Schutz Ihrer Daten und die Einhaltung branchenüblicher Best Practices für Sicherheit.
         </p>
       </div>
       </div>
       <button className="bg-[#444444] mx-[10px]  w-[110px] rounded-[3px] text-white h-[30px]">
 
-      <Link to='/Chat' className="text-[14px]">Send Message</Link>
+      <Link to='/Chat' className="text-[14px]">Nachricht senden</Link>
       </button>
     </div>
     

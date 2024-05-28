@@ -1,150 +1,172 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
-import Dashboard from './pages/dashboard/Dashboard';
-import Help from './pages/Help/Help';
-import Pricing from './pages/Pricing/Pricing';
-import Problems from './pages/Problem/Problems';
-import Login from './pages/Login/Login';
-import Analytics from './pages/dashboard/pages/Analytics';
-import Report from './pages/dashboard/pages/Report';
-import Messages from './pages/dashboard/pages/Messages';
-import Repositary from './pages/dashboard/pages/Repositary';
-import Logs from './pages/dashboard/pages/Logs';
-import Feedback from './pages/Feedback/Feedback';
-import SubscriptionForm from './pages/Pricing/SubscriptionForm';
-import Chat from './pages/Help/Chat';
-import SubFormYear from './pages/Pricing/SubFormYear';
+import Footer from './components/Footer';
 
+const Dashboard = React.lazy(() => import('./pages/dashboard/Dashboard'));
+const Help = React.lazy(() => import('./pages/Help/Help'));
+const Pricing = React.lazy(() => import('./pages/Pricing/Pricing'));
+const Problems = React.lazy(() => import('./pages/Problem/Problems'));
+const Login = React.lazy(() => import('./pages/Login/Login'));
+const Analytics = React.lazy(() => import('./pages/dashboard/pages/Analytics'));
+const Report = React.lazy(() => import('./pages/dashboard/pages/Report'));
+const Messages = React.lazy(() => import('./pages/dashboard/pages/Messages'));
+const Repositary = React.lazy(() => import('./pages/dashboard/pages/Repositary'));
+const Logs = React.lazy(() => import('./pages/dashboard/pages/Logs'));
+const Feedback = React.lazy(() => import('./pages/Feedback/Feedback'));
+const SubscriptionForm = React.lazy(() => import('./pages/Pricing/SubscriptionForm'));
+const Chat = React.lazy(() => import('./pages/Help/Chat'));
+const SubFormYear = React.lazy(() => import('./pages/Pricing/SubFormYear'));
 
 const router = createBrowserRouter([
- 
   {
     path: "/",
-    element: (<><Header /><Home /></>),
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/dashboard",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
         <Analytics />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/Help",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Help />
-      </>
+        <Footer />
+      </Suspense>
     ),
   },
   {
     path: "/Feedback",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Feedback />
-      </>
+        <Footer />
+      </Suspense>
     ),
   },
   {
     path: "/Problems",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Problems />
-      </>
+        <Footer />
+      </Suspense>
     ),
   },
   {
     path: "/Pricing",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Pricing />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/login",
-    element: <Login />,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Login />
+        
+      </Suspense>
+    ),
   },
   {
     path: "/Analytics",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
         <Analytics />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/Report",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
         <Report />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/Messages",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
         <Messages />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/Repositary",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
         <Repositary />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/logs",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
         <Logs />
-      </>
+      </Suspense>
     ),
   },
   {
     path: "/SubscriptionForm",
-    element:<><Header /><SubscriptionForm /></> ,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+        <SubscriptionForm />
+        <Footer />
+      </Suspense>
+    ),
   },
   {
     path: "/SubFormYear",
-    element:<><Header /><SubFormYear /></> ,
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+        <SubFormYear />
+        <Footer />
+        
+      </Suspense>
+    ),
   },
   {
     path: "/Chat",
     element: (
-      <>
+      <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Chat />
-      </>
+        <Footer />
+      </Suspense>
     ),
   },
 ]);
 
-
-
-
 function App() {
-  return (
-      <RouterProvider router={router} />
-
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
