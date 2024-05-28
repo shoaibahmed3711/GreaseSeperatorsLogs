@@ -141,12 +141,13 @@ const Logs = () => {
   });
 
   return (
-<div className='absolute top-[4vw] right-0 bg-[#ececec] p-[0.5vw] w-[84vw] overflow-y-auto'>      <h1 className="text-[2.5vw] font-bold font-roboto ">Logs</h1>
+<div className='absolute top-[4vw] right-0 bg-[#ececec] p-[0.5vw] h-screen w-[84vw] overflow-y-auto'>
+        <h1 className="text-[2.5vw] font-bold font-roboto ">Logs</h1>
       <button className="text-white text-[1.1vw] my-[2vw] bg-[#444444] py-[0.5vw] px-[1.5vw] font-semibold">
         Integrate Logs
       </button>
       <div className="h-[50vw]">
-        <div className="bg-white w-[80vw] h-[3vw] flex flex-row justify-between overflow-y-auto px-[2vw] items-center">
+        <div className="bg-white w-[80vw] h-[4vw] flex flex-row justify-between overflow-y-auto px-[2vw] items-center">
           <div>
             <input
               className="p-[0.3vw] w-[25vw] text-[1.3vw] border-[.1vw] border-[#444444] rounded-[0.2vw] mx-[1vw]"
@@ -161,7 +162,7 @@ const Logs = () => {
               className="w-[3vw]  mx-[0.5vw] rounded-md"
               onClick={handleRefresh}
             >
-              <img src="/Logs/refresh.png" alt="" />
+              <img src="/refresh.png" alt="" />
             </button>
             <button
               className="w-[3vw]  mx-[0.5vw] rounded-md"
@@ -173,7 +174,7 @@ const Logs = () => {
               className="w-[3vw]  mx-[0.5vw] rounded-md"
               onClick={handleExport}
             >
-              <img src="/Logs/export.png" alt="" />
+              <img src="/export.png" alt="" />
             </button>
           </div>
         </div>
@@ -242,7 +243,7 @@ const Logs = () => {
             className="w-[4vw] text-white p-2 rounded"
             onClick={toggleFormVisibility}
           >
-            <img src="/Logs/add.png" alt="" />
+            <img src="add.png" alt="" />
           </button>
         </div>
       )}
@@ -255,7 +256,7 @@ const Logs = () => {
               onClick={toggleFormVisibility}
             >
               <img
-                src="/Logs/close.png"
+                src="/close.png"
                 className="w-[2vw]"
                 alt=""
               />
