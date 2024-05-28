@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === 'shoaib' && password === '123') {
+    if (username === 'Adminuser' && password === 'Admin@123456') {
       navigate('/dashboard');
     } else {
       alert('Invalid username or password');
