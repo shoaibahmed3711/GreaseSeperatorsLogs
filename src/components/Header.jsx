@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="bg-[#444444]  h-[4vw] flex flex-row justify-between px-[4vw]">
       <div className="text-white w-[7vw] flex  items-center h-[3vw]">
-        <img src="public/logo.png" alt="" />
+        <img src="/logo.png" alt="" />
       </div>
       <div className="text-white flex flex-row h-[6vw]">
         <ul className="flex flex-row gap-[1.5vw] mt-[1vw] ">

@@ -125,7 +125,7 @@ const Analytics = () => {
           <div className=" h-[17vw] w-[82vw] flex flex-row justify-between items-center">
             <div className="bg-[#444444] text-white shadow-lg h-[17vw] w-[25vw] p-[1vw] rounded-[1vw]">
               <div className='flex flex-row items-center gap-[1vw]'>
-                <img src="public/analytics/sales.png" className='w-[5vw]' alt="" />
+                <img src="/analytics/sales.png" className='w-[5vw]' alt="" />
                 <div>
                   <h1 className='text-[1.5vw]'>Total Sales</h1>
                   <p className='twxt-[1vw]'>Orders</p>
@@ -136,7 +136,7 @@ const Analytics = () => {
               </div>
             <div className="bg-white shadow-lg h-[17vw] w-[25vw] p-[1vw] rounded-[1vw]">
             <div className='flex flex-row items-center gap-[1vw]'>
-                <img src="public/analytics/visitors.png" className='w-[5vw]' alt="" />
+                <img src="/analytics/visitors.png" className='w-[5vw]' alt="" />
                 <div>
                   <h1 className='text-[1.5vw]'>Visitors</h1>
                   <p className='twxt-[1vw]'>Avg time 4pm</p>
@@ -147,7 +147,7 @@ const Analytics = () => {
             </div>
             <div className="bg-white shadow-lg h-[17vw] w-[25vw] p-[1vw] rounded-[1vw]">
             <div className='flex flex-row items-center gap-[1vw]'>
-                <img src="public/analytics/refunds.png" className='w-[5vw]' alt="" />
+                <img src="/analytics/refunds.png" className='w-[5vw]' alt="" />
                 <div>
                   <h1 className='text-[1.5vw]'>Refund</h1>
                   <p className='twxt-[1vw]'>2 Disputed</p>

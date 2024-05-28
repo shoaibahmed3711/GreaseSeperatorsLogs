@@ -28,7 +28,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="w-[50vw] h-[30vw]">
-            <img src="public/greaseseperator.png" className="w-[35vw]" alt="" />
+            <img src="/greaseseperator.png" className="w-[35vw]" alt="" />
           </div>
         </div>
         
@@ -42,7 +42,7 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center  gap-[3vw]">
         <div className="flex flex-row items-center justify-center gap-[3vw] mt-[2vw]">
             <div className="w-[20vw] h-[20vw] bg-[#444444] shadow-2xl rounded-md p-[1vw]">
-              <img src="public/Home/error.png" className="w-[10vw] mb-[3vw]" alt="" />
+              <img src="/Home/error.png" className="w-[10vw] mb-[3vw]" alt="" />
               <h1 className="text-[1.3vw] text-white font-bold">Verlorene Protokolle und manuelle Fehler</h1>
               <div className='text-left pt-[1vw]'><Link to="/Problems" className="">
           <button className=" font-bold text-[1vw] text-white">
@@ -51,7 +51,7 @@ const Home = () => {
         </Link></div>
             </div>
             <div className="w-[20vw] h-[20vw] bg-[#ececec] shadow-2xl rounded-md p-[1vw]">
-              <img src="public/Home/critical.png" className="w-[10vw] mb-[3vw]" alt="" />
+              <img src="/Home/critical.png" className="w-[10vw] mb-[3vw]" alt="" />
               <h1 className="text-[1.3vw] font-bold">Mangelnder Zugriff auf kritische Daten</h1>
               <div className='text-left pt-[1vw]'><Link to="/Problems" className="">
           <button className=" font-bold text-[1vw] text-[#444444]">
@@ -62,7 +62,7 @@ const Home = () => {
           </div>
           <div className="flex flex-row items-center justify-center gap-[3vw] mb-[2vw]">
           <div className="w-[20vw] h-[20vw] bg-[#ececec] shadow-2xl rounded-md p-[1vw]">
-              <img src="public/Home/manual.png" className="w-[10vw] mb-[3vw]" alt="" />
+              <img src="/Home/manual.png" className="w-[10vw] mb-[3vw]" alt="" />
               <h1 className="text-[1.3vw] font-bold">Zeitaufwändige manuelle Eingabe</h1>
               <div className='text-left pt-[1vw]'><Link to="/Problems" className="">
           <button className=" font-bold text-[1vw] text-[#444444]">
@@ -71,7 +71,7 @@ const Home = () => {
         </Link></div>
             </div>
             <div className="w-[20vw] h-[20vw] bg-[#ececec] shadow-2xl rounded-md p-[1vw]">
-              <img src="public/Home/Risks.png" className="w-[10vw] mb-[3vw]" alt="" />
+              <img src="/Home/Risks.png" className="w-[10vw] mb-[3vw]" alt="" />
               <h1 className="text-[1.3vw] font-bold">Compliance-Risiken und Betriebsstörungen</h1>
               <div className='text-left pt-[1vw]'><Link to="/Problems" className="">
           <button className=" font-bold text-[1vw] text-[#444444]">
@@ -164,13 +164,13 @@ const Home = () => {
             <h1 className="text-[2vw] font-bold">Monatlich für 5€</h1>
             <p className="text-[1.2vw] text-center">
             <ul className='flex flex-col gap-[1vw]'>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Entwickelt für die Bedürfnisse der Gastronomie.</h1></li>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Inklusive monatlicher Entsorgungsdokumentation.</h1></li>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Verwaltet Selbstinspektionsaufzeichnungen.</h1></li>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Bietet zugänglichen digitalen Speicher.</h1></li>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Stellt die Einhaltung gesetzlicher Vorschriften sicher.</h1></li>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Kosten: 5 Euro pro Monat.</h1></li>
-                <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Flexible und kostengünstige Lösung.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Entwickelt für die Bedürfnisse der Gastronomie.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Inklusive monatlicher Entsorgungsdokumentation.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Verwaltet Selbstinspektionsaufzeichnungen.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Bietet zugänglichen digitalen Speicher.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Stellt die Einhaltung gesetzlicher Vorschriften sicher.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Kosten: 5 Euro pro Monat.</h1></li>
+                <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Flexible und kostengünstige Lösung.</h1></li>
             </ul>
             </p>
           </div>
@@ -178,13 +178,13 @@ const Home = () => {
             <h1 className="text-[2vw] font-bold">Jährlich für 50€</h1>
             <p className="text-[1.2vw] text-center">
             <ul className='flex flex-col gap-[1vw]'>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Mühelose digitale Dokumentenspeicherung.</h1></li>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Schneller Zugriff auf historische Daten.</h1></li>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Garantiert die Einhaltung der Vorschriften.</h1></li>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Kosten: 50 Euro pro Jahr.</h1></li>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Bequeme und sichere Plattform.</h1></li>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Verbessert die betriebliche Effizienz.</h1></li>
-              <li className='flex flex-row items-center gap-[10px]'><img src="public/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Unterstützt langfristige Kosteneinsparungen.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Mühelose digitale Dokumentenspeicherung.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Schneller Zugriff auf historische Daten.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Garantiert die Einhaltung der Vorschriften.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Kosten: 50 Euro pro Jahr.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Bequeme und sichere Plattform.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Verbessert die betriebliche Effizienz.</h1></li>
+              <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Unterstützt langfristige Kosteneinsparungen.</h1></li>
             </ul>
             </p>
           </div>
@@ -199,29 +199,29 @@ const Home = () => {
       <h1 className="text-center text-[3vw] font-bold">FAQs</h1>
       <div className="flex w-[40vw] flex-col mx-auto mt-[3vw] gap-[1vw]">
         <div className='flex flex-col gap-[0.5vw]'>
-          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div1" ? "active" : "" }`} onClick={() => toggleVisibility("div1")} ><h1 className='text-[1vw]'>Q1:Wozu dient ein Fettabscheider in der Gastronomie?</h1><img src="public/Home/arrow.png" className='w-[1vw]' alt="" /></div>
+          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div1" ? "active" : "" }`} onClick={() => toggleVisibility("div1")} ><h1 className='text-[1vw]'>Q1:Wozu dient ein Fettabscheider in der Gastronomie?</h1><img src="/Home/arrow.png" className='w-[1vw]' alt="" /></div>
           <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] text-[1vw] h-[7vw] flex items-center rounded-sm ${ visibleDiv === "div1" ? "visible" : "hidden" }`} >Der Fettabscheider ist für die Entsorgung von Küchenabfällen in Restaurants unerlässlich. Es sammelt fetthaltiges Wasser aus Waschbecken, Bodenabläufen und Geschirrspülern, um Fettablagerungen in Abwassersystemen zu verhindern.</div>
         </div>
         <div className='flex flex-col gap-[0.5vw]'>
-          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div2" ? "active" : "" }`} onClick={() => toggleVisibility("div2")} ><h1 className='text-[1vw]'>Q2:Wie oft müssen Fettabscheider in Deutschland geleert werden?</h1><img src="public/Home/arrow.png" className='w-[1vw]' alt="" /></div>
+          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div2" ? "active" : "" }`} onClick={() => toggleVisibility("div2")} ><h1 className='text-[1vw]'>Q2:Wie oft müssen Fettabscheider in Deutschland geleert werden?</h1><img src="/Home/arrow.png" className='w-[1vw]' alt="" /></div>
           <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[7vw] text-[1vw] flex items-center rounded-sm ${ visibleDiv === "div2" ? "visible" : "hidden" }`} >In Deutschland müssen Fettabscheider monatlich geleert werden, um die ordnungsgemäße Funktion und Einhaltung der Vorschriften sicherzustellen.</div>
         </div>
         <div className='flex flex-col gap-[0.5vw]'>
-          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div3" ? "active" : "" }`} onClick={() => toggleVisibility("div3")} ><h1 className='text-[1vw]'>Q3: Wie funktioniert ein Fettabscheider?</h1><img src="public/Home/arrow.png" className='w-[1vw]' alt="" /></div>
+          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div3" ? "active" : "" }`} onClick={() => toggleVisibility("div3")} ><h1 className='text-[1vw]'>Q3: Wie funktioniert ein Fettabscheider?</h1><img src="/Home/arrow.png" className='w-[1vw]' alt="" /></div>
           <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[7vw] text-[1vw] flex items-center rounded-sm ${ visibleDiv === "div3" ? "visible" : "hidden" }`} >Ein Fettabscheider sorgt dafür, dass sich fetthaltiges Wasser beruhigt, sodass das Fett nach oben steigt und gleichzeitig Wasser durchfließen kann. Eine Rückhaltevorrichtung fängt das Fett auf, das dann bei der Wartung entfernt wird.</div>
         </div>
         <div className='flex flex-col gap-[0.5vw]'>
-          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div4" ? "active" : "" }`} onClick={() => toggleVisibility("div4")} ><h1 className='text-[1vw]'>Q4: Welche Verantwortung haben Restaurantbetreiber in Bezug auf Fettabscheider?</h1><img src="public/Home/arrow.png" className='w-[1vw]' alt="" /></div>
+          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div4" ? "active" : "" }`} onClick={() => toggleVisibility("div4")} ><h1 className='text-[1vw]'>Q4: Welche Verantwortung haben Restaurantbetreiber in Bezug auf Fettabscheider?</h1><img src="/Home/arrow.png" className='w-[1vw]' alt="" /></div>
           <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[7vw] text-[1vw] flex items-center rounded-sm ${ visibleDiv === "div4" ? "visible" : "hidden" }`} >Restaurantbetreiber sind für die Wartung und Reparatur von Fettabscheidern sowie die Führung eines digitalen Betriebsprotokolls über Wartungsarbeiten und Abfallentsorgungen verantwortlich.</div>
         </div>
         <div className='flex flex-col gap-[0.5vw]'>
-          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div5" ? "active" : "" }`} onClick={() => toggleVisibility("div5")} ><h1 className='text-[1vw]'>Q5:Was passiert mit dem Betriebsprotokoll, wenn ein Restaurant den Besitzer wechselt?</h1><img src="public/Home/arrow.png" className='w-[1vw]' alt="" /></div>
+          <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[5vw] flex items-center justify-between rounded-sm cursor-pointer ${ visibleDiv === "div5" ? "active" : "" }`} onClick={() => toggleVisibility("div5")} ><h1 className='text-[1vw]'>Q5:Was passiert mit dem Betriebsprotokoll, wenn ein Restaurant den Besitzer wechselt?</h1><img src="/Home/arrow.png" className='w-[1vw]' alt="" /></div>
           <div className={`bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l shadow-lg p-[1vw] h-[7vw] text-[1vw] flex items-center rounded-sm ${ visibleDiv === "div5" ? "visible" : "hidden" }`} >Wenn ein Restaurant den Eigentümer wechselt, kann der neue Eigentümer Zugriff auf das bestehende Betriebsprotokoll erben und so die Kontinuität in der Abfallentsorgungsdokumentation gewährleisten.</div>
         </div>
       </div>
       </div>
       
-        <img src="public/Footer.svg" alt="" />
+        <img src="/Footer.svg" alt="" />
     </div>
   );
 };

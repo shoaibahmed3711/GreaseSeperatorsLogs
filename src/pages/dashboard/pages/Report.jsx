@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import { Line } from 'react-chartjs-2';
 const Report = () => {
 
@@ -37,12 +36,12 @@ const Report = () => {
  const userData = Object.values(monthlyData);
 
  // Line chart data
- const chartData = {
+ const chart1Data = {
    labels: Object.keys(monthlyData), // Use months as labels
    datasets: [
      {
        data: userData,
-       borderColor: 'green', // Line color
+       borderColor: 'yellow', // Line color
        borderWidth: 2,
        fill: false,
      },
@@ -50,7 +49,7 @@ const Report = () => {
  };
 
  // Line chart options
- const chartOptions = {
+ const chart1Options = {
    plugins: {
      tooltip: {
        callbacks: {
@@ -78,6 +77,129 @@ const Report = () => {
    },
  };
  
+
+ const chart2Data = {
+  labels: Object.keys(monthlyData), // Use months as labels
+  datasets: [
+    {
+      data: userData,
+      borderColor: 'yellow', // Line color
+      borderWidth: 2,
+      fill: false,
+    },
+  ],
+};
+
+// Line chart options
+const chart2Options = {
+  plugins: {
+    tooltip: {
+      callbacks: {
+        label: function(context) {
+          return `Users: ${context.parsed.y}`;
+        },
+      },
+    },
+    legend: {
+      display: false, // Hide legend
+    },
+  },
+  elements: {
+    point: {
+      radius: 0, // Hide points
+    },
+  },
+  scales: {
+    y: {
+      display: false, // Hide y-axis
+    },
+    x: {
+      display: false, // Hide x-axis
+    },
+  },
+};
+
+const chart3Data = {
+  labels: Object.keys(monthlyData), // Use months as labels
+  datasets: [
+    {
+      data: userData,
+      borderColor: 'yellow', // Line color
+      borderWidth: 2,
+      fill: false,
+    },
+  ],
+};
+
+// Line chart options
+const chart3Options = {
+  plugins: {
+    tooltip: {
+      callbacks: {
+        label: function(context) {
+          return `Users: ${context.parsed.y}`;
+        },
+      },
+    },
+    legend: {
+      display: false, // Hide legend
+    },
+  },
+  elements: {
+    point: {
+      radius: 0, // Hide points
+    },
+  },
+  scales: {
+    y: {
+      display: false, // Hide y-axis
+    },
+    x: {
+      display: false, // Hide x-axis
+    },
+  },
+};
+
+const chart4Data = {
+  labels: Object.keys(monthlyData), // Use months as labels
+  datasets: [
+    {
+      data: userData,
+      borderColor: 'yellow', // Line color
+      borderWidth: 2,
+      fill: false,
+    },
+  ],
+};
+
+// Line chart options
+const chart4Options = {
+  plugins: {
+    tooltip: {
+      callbacks: {
+        label: function(context) {
+          return `Users: ${context.parsed.y}`;
+        },
+      },
+    },
+    legend: {
+      display: false, // Hide legend
+    },
+  },
+  elements: {
+    point: {
+      radius: 0, // Hide points
+    },
+  },
+  scales: {
+    y: {
+      display: false, // Hide y-axis
+    },
+    x: {
+      display: false, // Hide x-axis
+    },
+  },
+};
  const [formData, setFormData] = useState({
   profilePic: null,
   name: "",
@@ -173,9 +295,6 @@ const filteredRows = rows.filter((row) => {
     );
   }
 });
-
-
-
   return (
 <div className='absolute top-[4vw] h-[42vw] right-0 bg-[#ececec] p-[0.5vw] w-[84vw] overflow-y-auto'>      
 <div className="h-[10vw] m-[1vw] w-[82vw] flex flex-row justify-between items-center">
@@ -184,12 +303,12 @@ const filteredRows = rows.filter((row) => {
             <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
               <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>New User</h1>
-              <img src="public/Report/newuser.png" className='w-[3vw]' alt="" />
+              <img src="/Report/newuser.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
                 <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
-                <Line data={chartData} options={chartOptions} />
+                <Line data={chart1Data} options={chart1Options} />
                 </div>
               </div>
             </div>
@@ -197,12 +316,12 @@ const filteredRows = rows.filter((row) => {
             <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
             <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>Unique user</h1>
-              <img src="public/Report/unique.png" className='w-[3vw]' alt="" />
+              <img src="/Report/unique.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
                 <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
-                <Line data={chartData} options={chartOptions} />
+                <Line data={chart2Data} options={chart2Options} />
                 </div>
               </div>
               </div>
@@ -212,24 +331,24 @@ const filteredRows = rows.filter((row) => {
             <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
             <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>Mentioned in Tags</h1>
-              <img src="public/Report/tags.png" className='w-[3vw]' alt="" />
+              <img src="/Report/tags.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
                 <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
-                <Line data={chartData} options={chartOptions} />
+                <Line data={chart3Data} options={chart3Options} />
                 </div>
               </div>
               </div>
             <div className="bg-white flex flex-col gap-[2vw] shadow-lg h-[10vw] p-[1vw] w-[19.5vw] rounded-[1vw]">
             <div className='flex flex-row justify-between'>
               <h1 className='font-bold text-[1.5vw]'>Website Visits</h1>
-              <img src="public/Report/visits.png" className='w-[3vw]' alt="" />
+              <img src="/Report/visits.png" className='w-[3vw]' alt="" />
               </div>
               <div className='flex flex-row justify-between'>
                 <h1 className='font-bold text-[1.5vw]'>0</h1>
                 <div className='w-[8.5vw] '>
-                <Line data={chartData} options={chartOptions} />
+                <Line data={chart4Data} options={chart4Options} />
                 </div>
               </div>
               </div>
@@ -245,7 +364,7 @@ const filteredRows = rows.filter((row) => {
          
           <div className='bg-[#ececec] w-[39vw] h-[4vw] rounded-md m-[0.2vw]  flex flex-row items-center justify-between px-[1vw]'>
             <div className='flex flex-row items-center'>
-              <img src="public/Report/profile.png" className='w-[3.2vw] m-[0.3vw]' alt="" />
+              <img src="/Report/profile.png" className='w-[3.2vw] m-[0.3vw]' alt="" />
                 <h1 className='m-[0.3vw] text-[1.4vw]'>Grease Seperator</h1>
             </div>
               <div className='flex flex-col text-center'>
@@ -281,7 +400,7 @@ const filteredRows = rows.filter((row) => {
                     />
                   ) : (
                     <img
-                      src="src/pages/Dashboard/images/profile.png"
+                      src="/Dashboard/images/profile.png"
                       className="w-[2vw] mx-auto"
                       alt=""
                     />
@@ -302,7 +421,7 @@ const filteredRows = rows.filter((row) => {
             className="w-[3vw] p-[0.1vw] rounded"
             onClick={() => setFormVisible(true)}
           >
-            <img src="public/Report/add.png" alt="" />
+            <img src="/Report/add.png" alt="" />
           </button>
         </div>
       )}
@@ -314,7 +433,7 @@ const filteredRows = rows.filter((row) => {
               className="hover:bg-red-500 w-[2vw] bg-white shadow-lg rounded-[0.7vw] text-white p-[0.2vw]"
               onClick={() => setFormVisible(false)}
             >
-              <img src="public/Report/close.png" alt="" />
+              <img src="/Report/close.png" alt="" />
             </button>
           </div>
           <form onSubmit={handleSubmit} className="overflow-y-auto p-[1vw] ">

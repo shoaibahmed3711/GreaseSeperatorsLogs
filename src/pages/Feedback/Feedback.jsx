@@ -88,7 +88,7 @@ const Feedback = () => {
                   {[...Array(5)].map((_, starIndex) => (
                     <img
                       key={starIndex}
-                      src={starIndex < ratings[index] ? "src/pages/Feedback/star/Fstar.png" : "src/pages/Feedback/star/Estar.png"}
+                      src={starIndex < ratings[index] ? "/Feedback/star/Fstar.png" : "/Feedback/star/Estar.png"}
                       className="w-[2vw] cursor-pointer"
                       alt=""
                       onClick={() => handleRatingChange(index, starIndex + 1)}

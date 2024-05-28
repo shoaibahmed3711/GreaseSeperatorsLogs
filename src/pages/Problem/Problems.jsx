@@ -9,7 +9,7 @@ const Problems = () => {
         <h1 className="text-center text-[3vw] mx-auto font-bold mt-[4vw] flex flex-col">Unsere Lösung für</h1>
         <div className="flex flex-col mx-auto lg:flex-row ">
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-            <img src="public/problem/1.png" className="w-[50px]" alt="" />
+            <img src="/problem/1.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Analog pflegen und organisieren.
             </h1>
@@ -21,7 +21,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/2.png" className="w-[50px]" alt="" />
+          <img src="/problem/2.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Gefahr des Verlusts von Betriebsprotokollen.
             </h1>
@@ -32,7 +32,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/3.png" className="w-[50px]" alt="" />
+          <img src="/problem/3.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Die manuelle Dateneingabe ist zeitaufwändig.
             </h1>
@@ -42,7 +42,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/4.png" className="w-[50px]" alt="" />
+          <img src="/problem/4.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Der Entsorgungsdokumentation mangelt es an Transparenz.
             </h1>
@@ -56,7 +56,7 @@ const Problems = () => {
 
         <div className="flex flex-col mx-auto lg:flex-row ">
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/5.png" className="w-[50px]" alt="" />
+          <img src="/problem/5.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[12px]">
             Die Übertragung von Betriebsprotokollen bei Geschäftsübergängen ist schwierig.
             </h1>
@@ -68,7 +68,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/6.png" className="w-[50px]" alt="" />
+          <img src="/problem/6.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Die Verfolgung des Wartungsverlaufs ist wirkungslos.
             </h1>
@@ -80,7 +80,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/7.png" className="w-[50px]" alt="" />
+          <img src="/problem/7.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Die Verwaltung der Zugriffsrechte für Stakeholder ist komplex.
             </h1>
@@ -92,7 +92,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/8.png" className="w-[50px]" alt="" />
+          <img src="/problem/8.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Einhaltung gesetzlicher Vorschriften und Wartung.
             </h1>
@@ -106,7 +106,7 @@ const Problems = () => {
 
         <div className="flex flex-col mx-auto lg:flex-row ">
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/9.png" className="w-[50px]" alt="" />
+          <img src="/problem/9.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Eingeschränkte Skalierbarkeit analoger Betriebsprotokolle.
             </h1>
@@ -118,7 +118,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/10.png" className="w-[50px]" alt="" />
+          <img src="/problem/10.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Bedenken hinsichtlich der Datensicherheit bei der digitalen Speicherung.
             </h1>
@@ -130,7 +130,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/11.png" className="w-[50px]" alt="" />
+          <img src="/problem/11.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Es ist schwierig, historische Datentrends zu verfolgen.
             </h1>
@@ -142,7 +142,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/12.png" className="w-[50px]" alt="" />
+          <img src="/problem/12.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Widerstand gegen den Übergang von analog zu digital.
             </h1>
@@ -157,7 +157,7 @@ const Problems = () => {
 
         <div className="flex flex-col mx-auto lg:flex-row ">
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/13.png" className="w-[50px]" alt="" />
+          <img src="/problem/13.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Eine inkonsistente Dateneingabe führt zu Ungenauigkeiten.
             </h1>
@@ -169,7 +169,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/14.png" className="w-[50px]" alt="" />
+          <img src="/problem/14.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Der Fernzugriff auf Betriebsprotokolle ist eine Herausforderung.
             </h1>
@@ -181,7 +181,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/15.png" className="w-[50px]" alt="" />
+          <img src="/problem/15.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Eingeschränkter Einblick in Wartung und Inspektionen.
             </h1>
@@ -193,7 +193,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/16.png" className="w-[50px]" alt="" />
+          <img src="/problem/16.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Hohe Kosten für die manuelle Aufzeichnung.
             </h1>
@@ -208,7 +208,7 @@ const Problems = () => {
 
         <div className="flex flex-col mx-auto lg:flex-row ">
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/17.png" className="w-[50px]" alt="" />
+          <img src="/problem/17.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Komplexität der Integration in bestehende Arbeitsabläufe.
             </h1>
@@ -220,7 +220,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/18.png" className="w-[50px]" alt="" />
+          <img src="/problem/18.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Sichtbarkeit in Echtzeit.
             </h1>
@@ -233,7 +233,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/19.png" className="w-[50px]" alt="" />
+          <img src="/problem/19.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Genauigkeit und Authentizität.
             </h1>
@@ -245,7 +245,7 @@ const Problems = () => {
           </div>
 
           <div className="flex flex-col w-[250px] h-[280px] p-[20px] rounded-[0.4vw] bg-white m-[1vw] gap-[10px]">
-          <img src="public/problem/20.png" className="w-[50px]" alt="" />
+          <img src="/problem/20.png" className="w-[50px]" alt="" />
             <h1 className="font-bold text-[14px]">
             Begrenzter technischer Support für digitale Plattformen.
             </h1>

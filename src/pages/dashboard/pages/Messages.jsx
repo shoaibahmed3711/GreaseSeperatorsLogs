@@ -54,14 +54,14 @@ const ChatBox = ({
                             className="reaction-button ml-[1vw]"
                             onClick={() => handleReaction(index)}
                         >
-                            <img src="public/SVG/like.png" className="w-[1.4vw]" alt="" />
+                            <img src="/SVG/like.png" className="w-[1.4vw]" alt="" />
                         </button>
                         {/* Delete button */}
                         <button
                             className="delete-button ml-2 text-red-500"
                             onClick={() => handleDeleteMessage(index)}
                         >
-                            <img src="public/SVG/Tarsh.png" className="w-[1.4vw]" alt="" />
+                            <img src="/SVG/Tarsh.png" className="w-[1.4vw]" alt="" />
                         </button>
                     </div>
                 ))}

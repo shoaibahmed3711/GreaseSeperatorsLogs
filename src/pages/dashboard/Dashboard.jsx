@@ -22,7 +22,7 @@ const Dashboard = () => {
         {/* Profile */}
         <div className="hover:bg-[#d5d5d5] px-[0.2vw]  py-[0.4vw] rounded-[0.2vw] mt-[1.5vh] flex flex-row justify-center items-center gap-[0.4vw]">
           <img
-            src="public/Home/profile.png"
+            src="/Home/profile.png"
             className="w-[3vw] rounded-[0.2vw]"
             alt="icon"
           />
@@ -170,7 +170,7 @@ const Dashboard = () => {
         </div>
             <img
               className="w-[2vw] cursor-pointer"
-              src="public/Home/profile.png"
+              src="/Home/profile.png"
               alt="Notifications"
             />
           </div>

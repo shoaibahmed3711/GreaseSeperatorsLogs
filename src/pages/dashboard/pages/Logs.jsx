@@ -161,19 +161,19 @@ const Logs = () => {
               className="w-[3vw]  mx-[0.5vw] rounded-md"
               onClick={handleRefresh}
             >
-              <img src="public/Logs/refresh.png" alt="" />
+              <img src="/Logs/refresh.png" alt="" />
             </button>
             <button
               className="w-[3vw]  mx-[0.5vw] rounded-md"
               onClick={handleFilter}
             >
-              <img src="public/Logs/filter.png" alt="" />
+              <img src="/Logs/filter.png" alt="" />
             </button>
             <button
               className="w-[3vw]  mx-[0.5vw] rounded-md"
               onClick={handleExport}
             >
-              <img src="public/Logs/export.png" alt="" />
+              <img src="/Logs/export.png" alt="" />
             </button>
           </div>
         </div>
@@ -242,7 +242,7 @@ const Logs = () => {
             className="w-[4vw] text-white p-2 rounded"
             onClick={toggleFormVisibility}
           >
-            <img src="public/Logs/add.png" alt="" />
+            <img src="/Logs/add.png" alt="" />
           </button>
         </div>
       )}
@@ -255,7 +255,7 @@ const Logs = () => {
               onClick={toggleFormVisibility}
             >
               <img
-                src="public/Logs/close.png"
+                src="/Logs/close.png"
                 className="w-[2vw]"
                 alt=""
               />

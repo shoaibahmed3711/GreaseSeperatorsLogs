@@ -62,103 +62,103 @@ const Pricing = () => {
           <tbody className=' p-[100px]'>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Monatliche Entsorgungsdokumentation. <strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Entwickelt für die Gastronomie.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Verwaltung von Selbstinspektionsaufzeichnungen.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Zugänglicher digitaler Speicher.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Sorgt für die Einhaltung von Vorschriften.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Bequemer Zugriff auf historische Daten.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Kosteneffiziente Lösung.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Flexible und erschwingliche Preisgestaltung.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Umfassendes Betriebsdatenmanagement.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Maßgeschneiderte Lösung für Gastronomiebetriebe.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Echtzeit-Sichtbarkeit der Leistung des Fettabscheiders.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Technischer Support für digitale Plattformen.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Verfolgung historischer Datentrends.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Remote access to operating logs.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Ungenauigkeiten aufgrund inkonsistenter Dateneingabe.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Schwierigkeiten bei der Integration in bestehende Systeme oder Arbeitsabläufe.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Begrenzte Verfügbarkeit des technischen Supports.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Komplexität bei der Verwaltung von Zugriffsrechten.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Unfähigkeit, den Wartungs- und Reparaturverlauf effektiv zu verfolgen.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
             <tr className='border-b-[2px] border-[#ececec]'>
               <td className='px-[20px] py-[20px]'>Hohe Kosten im Zusammenhang mit der manuellen Aufzeichnung.<strong>?</strong></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/cross.png" className='w-[35px]' alt="" /></td>
-              <td className='px-[90px] py-[20px]'><img src="public/images/True.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/cross.png" className='w-[35px]' alt="" /></td>
+              <td className='px-[90px] py-[20px]'><img src="/images/True.png" className='w-[35px]' alt="" /></td>
             </tr>
           </tbody>
         </table>

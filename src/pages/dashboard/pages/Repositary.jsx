@@ -87,14 +87,14 @@ const Repositary = () => {
                 />
                 <button className="bg-[#ececec] border-[#444444] border-[.1vw]">
                   <img
-                    src="public/Repository/search.png"
+                    src="/Repository/search.png"
                     className="w-[4vw] "
                     alt=""
                   />
                 </button>
               </div>
               <button className="px-[2vw] py-[0.5vw] rounded-sm border-[#444444] border-[.1vw] bg-[#ececec] flex flex-row items-center">
-                <img src="public/Repository/filter.png" className="w-[2vw]" alt="" />
+                <img src="/Repository/filter.png" className="w-[2vw]" alt="" />
                 <h1 className="text-[1.3vw]">Filter</h1>
               </button>
             </div>
@@ -103,7 +103,7 @@ const Repositary = () => {
                 <button className="px-[2vw] py-[0.5vw] rounded-sm bg-[#444444] flex flex-row items-center gap-[0.2vw]"
                   onClick={toggleFormVisibility}
                 > 
-                <img src="public/Repository/upload.png" className="w-[2vw]" alt="" />
+                <img src="/Repository/upload.png" className="w-[2vw]" alt="" />
                    <h1 className="text-[1.3vw] text-white">Add File</h1>
                   </button>
                 )}
@@ -119,7 +119,7 @@ const Repositary = () => {
                       <div className="flex flex-row items-center justify-center gap-[0.3vw]">
                         <img
                           className="w-[2vw]"
-                          src="public/Repository/folder.png"
+                          src="/Repository/folder.png"
                           alt=""
                         />
                         <h1 className="text-white">Folder Type</h1>
@@ -129,7 +129,7 @@ const Repositary = () => {
                       <div className="flex flex-row items-center justify-center gap-[0.3vw]">
                         <img
                           className="w-[2vw]"
-                          src="public/Repository/filename.png"
+                          src="/Repository/filename.png"
                           alt=""
                         />
                         <h1 className="text-white">Name of File</h1>
@@ -139,7 +139,7 @@ const Repositary = () => {
                       <div className="flex flex-row items-center justify-center gap-[0.3vw]">
                         <img
                           className="w-[2vw]"
-                          src="public/Repository/created.png"
+                          src="/Repository/created.png"
                           alt=""
                         />
                         <h1 className="text-white">Created</h1>
@@ -149,7 +149,7 @@ const Repositary = () => {
                       <div className="flex flex-row items-center justify-center gap-[0.3vw]">
                         <img
                           className="w-[2vw]"
-                          src="public/Repository/last.png"
+                          src="/Repository/last.png"
                           alt=""
                         />
                         <h1 className="text-white">Last Modified</h1>
@@ -184,7 +184,7 @@ const Repositary = () => {
                     className="hover:bg-red-500 w-[2vw] bg-white shadow-lg rounded-[0.7vw] text-white p-[0.2vw]"
                     onClick={toggleFormVisibility}
                   >
-                    <img src="public/Repository/close.png" alt="" />
+                    <img src="/Repository/close.png" alt="" />
                   </button>
                 </div>
                 <form
@@ -253,13 +253,13 @@ const Repositary = () => {
               <div className="file-preview text-center">
                 {data.type === "Image" ? (
                   <img
-                    src="public/Repository/img.png"
+                    src="/Repository/img.png"
                     alt=""
                     className="w-[10vw] h-[10vw] object-contain border-[0.2vw] rounded-md border-[#444444] bg-[#ececec]"
                   />
                 ) : (
                   <img
-                    src="public/Repository/doc.png"
+                    src="/Repository/doc.png"
                     alt=""
                     className="w-[10vw] h-[10vw] object-contain border-[0.2vw] rounded-md border-[#444444] bg-[#ececec]"
                   />
