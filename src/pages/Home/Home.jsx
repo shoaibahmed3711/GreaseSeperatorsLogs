@@ -15,19 +15,19 @@ const Home = () => {
 
   return (
     <div >
-      <div className="bg-white w-[100vw] h-full ">
-        <h1 className="text-[2.5vw] font-bold text-center py-[2vw]">
+      <div className="bg-white h-full ">
+        <h1 className=" text-[3vw] font-bold text-center py-[20px]">
         Verwalten Sie Ihre Fettabscheiderprotokolle digital
         </h1>
-        <div className="flex flex-row">
-          <div className="w-[50vw] h-full">
+        <div className="flex lg:flex-row flex-col mx-auto">
+          <div className="w-[50vw] mx-auto">
             <h1 className="text-[1.7vw] font-bold px-[4vw] py-[1vw]">Vereinfachen Sie die Compliance und optimieren Sie den Betrieb Ihres Catering-Unternehmens</h1>
             <p className="text-[1.3vw] text-center px-[4vw]">Willkommen bei GreaseLog – Ihrer Lösung für die problemlose Verwaltung von Fettabscheidern. Verabschieden Sie sich von verlorenem Papierkram und manuellen Fehlern und freuen Sie sich auf mühelose Compliance und Sicherheit. Mit unserer digitalen Plattform können Sie jederzeit und überall problemlos Entsorgungsaufzeichnungen eingeben, monatliche Selbstinspektionen durchführen und auf historische Daten zugreifen. Optimieren Sie die Zusammenarbeit mit Ihrem Team und Ihren Lieferanten und stellen Sie gleichzeitig problemlos die Einhaltung gesetzlicher Vorschriften sicher. Sind Sie bereit, Ihr Fettabscheidermanagement zu revolutionieren?</p>
             <Link to="/login" >
             <button className="bg-[#444444] hover:bg-[#666666] text-white text-[1.3vw] px-[1vw] py-[0.5vw] rounded-[3px] mx-[20vw] my-[2vw]">Loslegen</button>
             </Link>
           </div>
-          <div className="w-[50vw] h-[30vw]">
+          <div className="w-[50vw] mx-auto">
             <img src="/greaseseperator.png" className="w-[35vw]" alt="" />
           </div>
         </div>
@@ -35,12 +35,12 @@ const Home = () => {
       </div>
       <div className='flex flex-col bg-[#ececec] gap-[2vw] p-[2vw] '>
         <h1 className="text-left text-[5vw] flex flex-col font-bold"><p>Lass uns Holen</p> <p>Um uns kennenzulernen</p></h1>
-        <p className='h-full  flex flex-col  p-[2vw] items-right w-[60vw] ml-[30vw] gap-[1vw] rounded-md text-[1.6vw] "'>Unsere Website ist die Anlaufstelle für Fachleute aus der Gastronomiebranche, die auf der Suche nach effizienten Fettabscheiderlösungen sind. Mit einem umfassenden Verständnis der deutschen Vorschriften stellen wir sicher, dass jedes Restaurant die Compliance-Standards einhält. Von der Installation über die Wartung bis hin zu digitalen Betriebsprotokollen optimieren unsere Dienstleistungen das Abfallmanagement. Durch flexible Abonnementpläne bieten wir einen nahtlosen Datenzugriff bei Eigentümerwechseln und sorgen so für Sicherheit für unsere Kunden. Vertrauen Sie uns für zuverlässige Wartung und innovative technologische Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.</p>
+        <p className='h-full flex flex-col p-[2vw] items-right w-[60vw] ml-[30vw] gap-[1vw] rounded-md text-[1.6vw] "'>Unsere Website ist die Anlaufstelle für Fachleute aus der Gastronomiebranche, die auf der Suche nach effizienten Fettabscheiderlösungen sind. Mit einem umfassenden Verständnis der deutschen Vorschriften stellen wir sicher, dass jedes Restaurant die Compliance-Standards einhält. Von der Installation über die Wartung bis hin zu digitalen Betriebsprotokollen optimieren unsere Dienstleistungen das Abfallmanagement. Durch flexible Abonnementpläne bieten wir einen nahtlosen Datenzugriff bei Eigentümerwechseln und sorgen so für Sicherheit für unsere Kunden. Vertrauen Sie uns für zuverlässige Wartung und innovative technologische Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.</p>
       </div>
       <div className="p-[2vw] w-[100vw] h-full ">
         <h1 className="text-center text-[2.8vw] font-bold">Problemstellung</h1>
         <div className="flex flex-col justify-center items-center  gap-[3vw]">
-        <div className="flex flex-row items-center justify-center gap-[3vw] mt-[2vw]">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-[3vw] mt-[2vw]">
             <div className="w-[20vw] h-[20vw] bg-[#444444] shadow-2xl rounded-md p-[1vw]">
               <img src="/Home/error.png" className="w-[10vw] mb-[3vw]" alt="" />
               <h1 className="text-[1.3vw] text-white font-bold">Verlorene Protokolle und manuelle Fehler</h1>
@@ -60,7 +60,7 @@ const Home = () => {
         </Link></div>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-[3vw] mb-[2vw]">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-[3vw] mb-[2vw]">
           <div className="w-[20vw] h-[20vw] bg-[#ececec] shadow-2xl rounded-md p-[1vw]">
               <img src="/Home/manual.png" className="w-[10vw] mb-[3vw]" alt="" />
               <h1 className="text-[1.3vw] font-bold">Zeitaufwändige manuelle Eingabe</h1>
@@ -82,7 +82,7 @@ const Home = () => {
           </div>
         </div>
         <div className='p-[1vw] text-right px-[150px]'><Link to="/Problems" className=" mx-[2vw] ">
-          <button className=" font-bold text-[20px] hover:text-[#444444]">
+          <button className=" font-bold text-[2vw] hover:text-[#444444]">
             Learn more →
           </button>
         </Link></div>
@@ -134,7 +134,7 @@ const Home = () => {
       </div>
       <div className='p-[2vw]'>
         <h1 className="text-center text-[3vw] mt-[2vw] font-bold">Referenzen</h1>
-        <div className="h-[30vw]  flex flex-row justify-evenly  items-center text-black">
+        <div className="h-full  flex flex-col lg:flex-row gap-[1vw] justify-evenly  items-center text-black">
           <div className="h-[20vw] shadow-lg flex flex-col p-[2vw] items-center w-[30vw] gap-[1vw] rounded-md  bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l">
             <div className="w-[4vw]"><img src="public/Home/profile.png"  alt="" /></div>
             <h1 className="text-[1.8vw]">Shoaib Ahmed</h1>
@@ -159,11 +159,11 @@ const Home = () => {
       </div>
       <div className='bg-[#ececec] p-[2vw]'>
         <h1 className="text-center text-[3vw] font-bold">Preisgestaltung</h1>
-        <div className="h-full p-[2vw] flex flex-row justify-evenly  items-center text-black">
-          <div className="h-full shadow-lg flex flex-col p-[2vw] items-center w-[30vw] gap-[1vw] rounded-md hover:bg-[#ececec]  bg-[#D5D5D5]  ">
+        <div className="h-full p-[2vw] flex gap-[10px] flex-col lg:flex-row justify-evenly  items-center text-black">
+          <div className="h-full shadow-lg flex flex-col py-[20px] px-[10px] items-center w-[400px] gap-[10px] rounded-[] hover:bg-[#ececec] bg-[#D5D5D5] ">
             <h1 className="text-[2vw] font-bold">Monatlich für 5€</h1>
-            <p className="text-[1.2vw] text-center">
-            <ul className='flex flex-col gap-[1vw]'>
+            <p className=" ">
+            <ul className='flex flex-col gap-[10px]'>
                 <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Entwickelt für die Bedürfnisse der Gastronomie.</h1></li>
                 <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Inklusive monatlicher Entsorgungsdokumentation.</h1></li>
                 <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Verwaltet Selbstinspektionsaufzeichnungen.</h1></li>
@@ -174,10 +174,10 @@ const Home = () => {
             </ul>
             </p>
           </div>
-          <div className="h-full shadow-lg flex flex-col p-[2vw] items-center w-[30vw] gap-[1vw] rounded-md hover:bg-[#ececec]  bg-[#D5D5D5]  ">
+          <div className="h-full shadow-lg flex flex-col py-[20px] px-[10px] items-center w-[400px] gap-[10px] rounded-[] hover:bg-[#ececec] bg-[#D5D5D5] ">
             <h1 className="text-[2vw] font-bold">Jährlich für 50€</h1>
-            <p className="text-[1.2vw] text-center">
-            <ul className='flex flex-col gap-[1vw]'>
+            <p className="">
+            <ul className='flex flex-col gap-[10px]'>
               <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Mühelose digitale Dokumentenspeicherung.</h1></li>
               <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Schneller Zugriff auf historische Daten.</h1></li>
               <li className='flex flex-row items-center gap-[10px]'><img src="/Home/tick.png" className='w-[20px]' alt="" /><h1 className='text-[15px]'>Garantiert die Einhaltung der Vorschriften.</h1></li>
