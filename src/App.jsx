@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer';
 
+// Lazy-loaded components
 const Dashboard = React.lazy(() => import('./pages/dashboard/Dashboard'));
 const Help = React.lazy(() => import('./pages/Help/Help'));
 const Pricing = React.lazy(() => import('./pages/Pricing/Pricing'));
@@ -12,13 +13,14 @@ const Login = React.lazy(() => import('./pages/Login/Login'));
 const Analytics = React.lazy(() => import('./pages/dashboard/pages/Analytics'));
 const Report = React.lazy(() => import('./pages/dashboard/pages/Report'));
 const Messages = React.lazy(() => import('./pages/dashboard/pages/Messages'));
-const Repositary = React.lazy(() => import('./pages/dashboard/pages/Repositary'));
+const Repository = React.lazy(() => import('./pages/dashboard/pages/Repository')); // Corrected typo: Repositary to Repository
 const Logs = React.lazy(() => import('./pages/dashboard/pages/Logs'));
 const Feedback = React.lazy(() => import('./pages/Feedback/Feedback'));
 const SubscriptionForm = React.lazy(() => import('./pages/Pricing/SubscriptionForm'));
 const Chat = React.lazy(() => import('./pages/Help/Chat'));
 const SubFormYear = React.lazy(() => import('./pages/Pricing/SubFormYear'));
 
+// Define the router configuration
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Help",
+    path: "/help",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Feedback",
+    path: "/feedback",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />
@@ -60,7 +62,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Problems",
+    path: "/problems",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />
@@ -70,11 +72,12 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Pricing",
+    path: "/pricing",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Pricing />
+        <Footer />
       </Suspense>
     ),
   },
@@ -83,12 +86,11 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Login />
-        
       </Suspense>
     ),
   },
   {
-    path: "/Analytics",
+    path: "/analytics",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
@@ -97,7 +99,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Report",
+    path: "/report",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
@@ -106,7 +108,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Messages",
+    path: "/messages",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
@@ -115,11 +117,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Repositary",
+    path: "/repository", // Corrected typo: Repositary to Repository
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Dashboard />
-        <Repositary />
+        <Repository />
       </Suspense>
     ),
   },
@@ -133,7 +135,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/SubscriptionForm",
+    path: "/subscription-form",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />
@@ -143,18 +145,17 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/SubFormYear",
+    path: "/sub-form-year",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />
         <SubFormYear />
         <Footer />
-        
       </Suspense>
     ),
   },
   {
-    path: "/Chat",
+    path: "/chat",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <Header />

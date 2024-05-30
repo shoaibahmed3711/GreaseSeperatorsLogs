@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Repositary = () => {
+const Repository = () => {
   const [activeTab, setActiveTab] = useState(null);
   const [formData, setFormData] = useState({
     type: "",
@@ -275,4 +275,4 @@ const Repositary = () => {
   );
 };
 
-export default Repositary;
+export default Repository;
