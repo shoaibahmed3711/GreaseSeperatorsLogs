@@ -9,15 +9,7 @@ const Chat = () => {
   const [error, setError] = useState('');
 
   
-  useEffect(() => {
-    socket.on('receiveMessage', (message) => {
-      setMessages((prevMessages) => [...prevMessages, message]);
-    });
-
-    return () => {
-      socket.off('receiveMessage');
-    };
-  }, []);
+ 
 
   const sendMessage = (e) => {
     e.preventDefault();

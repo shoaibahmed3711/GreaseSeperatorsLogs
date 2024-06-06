@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Line } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  LineElement,
+  PointElement,
+  LinearScale,
+  CategoryScale,
+  Tooltip,
+} from 'chart.js';
+
+// Register the necessary components
+ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale, Tooltip);
 const Report = () => {
 
  // Default number of users for each month

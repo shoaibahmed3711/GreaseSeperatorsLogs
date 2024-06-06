@@ -139,10 +139,8 @@ const ChatBox = ({
         </div>
     );
 };
-// ChatSystem component
-// ChatSystem component
+
 const ChatSystem = ({ userName, userImageURL }) => {
-    // State to store the list of chats, selected chat index, and current message input
     const [chats, setChats] = useState([]);
     const [selectedChatIndex, setSelectedChatIndex] = useState(null);
     const [message, setMessage] = useState('');
@@ -171,12 +169,6 @@ const ChatSystem = ({ userName, userImageURL }) => {
             });
 
             setChats(updatedChats);
-        };
-
-        socket.on('receiveMessage', handleReceiveMessage);
-
-        return () => {
-            socket.off('receiveMessage', handleReceiveMessage);
         };
     }, [chats, selectedChatIndex]);
 
