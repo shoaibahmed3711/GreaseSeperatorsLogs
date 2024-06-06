@@ -19,7 +19,7 @@ const Home = () => {
         <h1 className="text-[10px] md:text-[3vw]  font-bold text-center py-[5px] md:py-[20px]">
         Verwalten Sie Ihre Fettabscheiderprotokolle digital
         </h1>
-        <div className="flex md:flex-row flex-col justify-center mx-auto">
+        <div className="flex lg:flex-row flex-col justify-center mx-auto">
           <div className="w-[50vw] mx-auto">
             <h1 className="md:text-[25px] text-[8px] font-bold md:px-[20px] md:py-[14px]">Vereinfachen Sie die Compliance und optimieren Sie den Betrieb Ihres Catering-Unternehmens</h1>
             <p className="md:text-[14px] text-[6px] text-left md:px-[20px]">Willkommen bei GreaseLog – Ihrer Lösung für die problemlose Verwaltung von Fettabscheidern. Verabschieden Sie sich von verlorenem Papierkram und manuellen Fehlern und freuen Sie sich auf mühelose Compliance und Sicherheit. Mit unserer digitalen Plattform können Sie jederzeit und überall problemlos Entsorgungsaufzeichnungen eingeben, monatliche Selbstinspektionen durchführen und auf historische Daten zugreifen. Optimieren Sie die Zusammenarbeit mit Ihrem Team und Ihren Lieferanten und stellen Sie gleichzeitig problemlos die Einhaltung gesetzlicher Vorschriften sicher. Sind Sie bereit, Ihr Fettabscheidermanagement zu revolutionieren?</p>
