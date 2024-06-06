@@ -3,29 +3,20 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#444444]  text-white py-10">
-      <div className="flex flex-col lg:flex-row lg:justify-between justify-center items-center mx-auto px-24">
+      <div className="flex gap-[50px] px-[20px] flex-wrap lg:flex-row lg:justify-between justify-center items-center mx-auto ">
         <div>
-          <img className="h-14" src="/logo.png" alt="" />
+          <img className="w-[100px]" src="/logo.png" alt="" />
         </div>
         <div className="flex flex-col">
-          <span>FettabscheiderSanierungBerlin</span>
-          <span>Address</span>
-          <span>Address</span>
-          <span>Phone no</span>
+          <span>Fettabscheider Sanierung Berlin</span>
+          <span>Telefonnummer: 017645769973</span>
         </div>
         <div className="flex flex-col">
           <span>Support</span>
           <span>Weekdays</span>
           <span>timing</span>
-          <span>number</span>
-          <span>email</span>
-        </div>
-        <div className="flex flex-col">
-          <span>Generally</span>
-          <span>Terms and condition</span>
-          <span>data protection</span>
-          <span>imprint</span>
-          <span>Contact</span>   
+          <span>Telefonnummer: 017645769973</span>
+          <span>Mailadresse: info@geske-technik.de</span>
         </div>
         <div className="flex flex-col">
           <Link to='/Problems'><span>Problems</span></Link>
