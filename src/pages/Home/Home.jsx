@@ -19,7 +19,7 @@ const Home = () => {
         <h1 className="text-[10px] md:text-[3vw]  font-bold text-center py-[5px] md:py-[20px]">
         Verwalten Sie Ihre Fettabscheiderprotokolle digital
         </h1>
-        <div className="flex md:flex-row flex-col mx-auto">
+        <div className="flex md:flex-row flex-col justify-center mx-auto">
           <div className="w-[50vw] mx-auto">
             <h1 className="md:text-[25px] text-[8px] font-bold md:px-[20px] md:py-[14px]">Vereinfachen Sie die Compliance und optimieren Sie den Betrieb Ihres Catering-Unternehmens</h1>
             <p className="md:text-[14px] text-[6px] text-left md:px-[20px]">Willkommen bei GreaseLog – Ihrer Lösung für die problemlose Verwaltung von Fettabscheidern. Verabschieden Sie sich von verlorenem Papierkram und manuellen Fehlern und freuen Sie sich auf mühelose Compliance und Sicherheit. Mit unserer digitalen Plattform können Sie jederzeit und überall problemlos Entsorgungsaufzeichnungen eingeben, monatliche Selbstinspektionen durchführen und auf historische Daten zugreifen. Optimieren Sie die Zusammenarbeit mit Ihrem Team und Ihren Lieferanten und stellen Sie gleichzeitig problemlos die Einhaltung gesetzlicher Vorschriften sicher. Sind Sie bereit, Ihr Fettabscheidermanagement zu revolutionieren?</p>
@@ -28,7 +28,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="w-[500px] mx-auto">
-            <img src="/greaseseperator.png" className="w-[35vw]" alt="" />
+            <img src="/greaseseperator.png" className="w-[250px]" alt="" />
           </div>
         </div>
         
@@ -89,21 +89,21 @@ const Home = () => {
       </div>
       <div className=" mx-auto bg-[#ececec] pb-[100px] flex flex-col justify-center items-center ">
       <h1 className="text-center m-[1vw] text-[30px] font-bold">Wie es funktioniert</h1>
-        <div className="bg-white p-[2vw] mx-auto w-[80vw] h-[300px] flex-col gap-[4vw] flex overflow-y-auto justify-evenly items-center">
+        <div className="bg-white p-[2vw] mx-auto h-[300px] flex-col gap-[4vw] flex overflow-y-auto justify-evenly items-center">
           <div className=" w-[60vw]  flex flex-col items-center justify-center">
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col md:flex-row justify-center items-center">
               <div className=" p-[20px] bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l w-[300px] rounded-[3px] h-full">
                 <h1 className="text-[20px] font-bold">Registrieren Sie sich für Ihr Konto:</h1>
                 <p className="text-[13px] my-[1vw]">Beginnen Sie mit GreaseLog, indem Sie sich für Ihr Konto anmelden. Geben Sie einfach Ihre E-Mail-Adresse an und erstellen Sie ein sicheres Passwort, um auf die Plattform zuzugreifen.</p>
               </div>
-              <div className="w-[12vw] bg-[#ececec] h-[1vw]"></div>
+              <div className="w-[1vw] h-[12vw] md:w-[12vw] bg-[#ececec] md:h-[1vw]"></div>
               <div className="border-[#ececec] border-[1vw] rounded-full p-[2.5vw] w-[10vw] font-bold text-center text-[2vw]">1</div>
             </div>
           </div>
           <div className=" w-[60vw]  flex flex-col items-center justify-center">
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="border-[#ececec] border-[1vw] rounded-full p-[2.5vw] w-[10vw] font-bold text-center text-[2vw]">2</div>
-              <div className="w-[12vw] bg-[#ececec] h-[1vw]"></div>
+            <div className="w-[1vw] h-[12vw] md:w-[12vw] bg-[#ececec] md:h-[1vw]"></div>
               <div className=" p-[20px] bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l w-[300px] rounded-[3px] h-full">
                 <h1 className="text-[16px] font-bold">Eingabeentsorgungsaufzeichnungen</h1>
                 <p className="text-[13px] my-[1vw]">Sobald Sie angemeldet sind, beginnen Sie mit der Eingabe Ihrer Entsorgungsunterlagen und monatlichen Selbstkontrolldaten. Unsere intuitive Benutzeroberfläche erleichtert die Eingabe und Nachverfolgung aller relevanten Informationen und gewährleistet so eine genaue und konforme Dokumentation.</p>
@@ -111,19 +111,19 @@ const Home = () => {
             </div>
           </div>
           <div className=" w-[60vw]  flex flex-col items-center justify-center">
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="p-[20px] bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l w-[300px] rounded-[3px] h-full">
                 <h1 className="text-[16px] font-bold">Zugriffsberechtigungen verwalten:</h1>
                 <p className="text-[13px] my-[1vw]">Kontrollieren Sie den Zugriff auf Ihre Daten ganz einfach. Mit GreaseLog können Sie Zugriffsberechtigungen für Ihr Team und Ihre Lieferanten verwalten und so sicherstellen, dass nur autorisierte Personen relevante Daten anzeigen oder ändern können. Richten Sie rollenbasierte Zugriffskontrollen ein, um Zugriffsebenen an bestimmte Benutzerrollen und Verantwortlichkeiten anzupassen.</p>
               </div>
-              <div className="w-[12vw] bg-[#ececec] h-[1vw]"></div>
+              <div className="w-[1vw] h-[12vw] md:w-[12vw] bg-[#ececec] md:h-[1vw]"></div>
               <div className="border-[#ececec] border-[1vw] rounded-full p-[2.5vw] w-[10vw] font-bold text-center text-[2vw]">3</div>
             </div>
           </div>
           <div className=" w-[60vw]  flex flex-col items-center justify-center">
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="border-[#ececec] border-[1vw] rounded-full p-[2.5vw] w-[10vw] font-bold text-center text-[2vw]">4</div>
-              <div className="w-[12vw] bg-[#ececec] h-[1vw]"></div>
+            <div className="w-[1vw] h-[12vw] md:w-[12vw] bg-[#ececec] md:h-[1vw]"></div>
               <div className=" p-[20px] bg-gradient-to-r from-[#ececec]  to-[#D5D5D5] hover:bg-gradient-to-l w-[300px] rounded-[3px] h-full">
                 <h1 className="text-[16px] font-bold">Historische Daten archivieren und darauf zugreifen:</h1>
                 <p className="text-[13px] my-[1vw]">Der Zugriff auf historische Daten ist mit GreaseLog einfach. Mit unserer Plattform können Sie frühere Aufzeichnungen mühelos archivieren und abrufen und erhalten so einen umfassenden Überblick über die Historie Ihrer Fettabscheiderverwaltung. Egal, ob Sie frühere Inspektionen überprüfen oder Compliance-Berichte erstellen müssen, GreaseLog ist für Sie da.</p>
