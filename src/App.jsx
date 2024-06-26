@@ -19,7 +19,6 @@ const Feedback = React.lazy(() => import('./pages/Feedback/Feedback'));
 const SubscriptionForm = React.lazy(() => import('./pages/Pricing/SubscriptionForm'));
 const Chat = React.lazy(() => import('./pages/Help/Chat'));
 const SubFormYear = React.lazy(() => import('./pages/Pricing/SubFormYear'));
-
 // Define the router configuration
 const router = createBrowserRouter([
   {
@@ -144,7 +143,7 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
-  {
+ {
     path: "/SubFormYear",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
@@ -168,6 +167,7 @@ const router = createBrowserRouter([
 
 function App() {
   return <RouterProvider router={router} />;
+  
 }
 
 export default App;
